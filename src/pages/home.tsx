@@ -8,7 +8,7 @@ export default function Home() {
         {/* Background Image - Left Half */}
         <div className="absolute inset-y-0 left-0 w-1/2 hidden md:block">
           <img 
-            src="/src/assets/TMLE.jpg" 
+            src="/images/TMLE.jpg" 
             alt="Conference Background" 
             className="w-full h-full object-cover opacity-20"
           />
@@ -149,7 +149,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
             {/* Gold Partner */}
             <div className="text-center">
-              <img src="/src/assets/One-JKH.png" alt="John Keells Holdings" className="h-32 w-auto mx-auto mb-3 object-contain" />
+              <img src="/images/One-JKH.png" alt="John Keells Holdings" className="h-32 w-auto mx-auto mb-3 object-contain" />
               <div className="text-yellow-600 text-sm font-semibold">
                 Gold Partner
               </div>
@@ -157,7 +157,7 @@ export default function Home() {
 
             {/* Silver Partner 1 */}
             <div className="text-center">
-              <img src="/src/assets/MAS.jpeg" alt="MAS Holdings" className="h-32 w-auto mx-auto mb-3 object-contain" />
+              <img src="/images/MAS.jpeg" alt="MAS Holdings" className="h-32 w-auto mx-auto mb-3 object-contain" />
               <div className="text-gray-500 text-xs font-semibold">
                 Silver Partner
               </div>
@@ -165,7 +165,7 @@ export default function Home() {
 
             {/* Silver Partner 2 */}
             <div className="text-center">
-              <img src="/src/assets/Haleys.png" alt="Hayleys Group" className="h-32 w-auto mx-auto mb-3 object-contain" />
+              <img src="/images/Haleys.png" alt="Hayleys Group" className="h-32 w-auto mx-auto mb-3 object-contain" />
               <div className="text-gray-500 text-xs font-semibold">
                 Silver Partner
               </div>
