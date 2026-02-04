@@ -188,7 +188,7 @@ export default function About() {
             <div className="bg-gradient-to-r from-[#C4B5FD]/10 to-white p-8 rounded-lg border-2 border-[#C4B5FD]">
               <div className="flex items-center justify-center md:justify-start">
                 <div className="flex-shrink-0">
-                  <img src="/src/assets/STL.png" alt="Society of Transport and Logistics" className="w-32 h-32 object-contain" />
+                  <img src="/images/STL.png" alt="Society of Transport and Logistics" className="w-32 h-32 object-contain" />
                 </div>
                 <div className="ml-6 text-center md:text-left">
                   <h4 className="text-xl font-bold text-gray-900">Society of Transport and Logistics</h4>
