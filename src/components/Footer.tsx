@@ -65,10 +65,7 @@ export default function Footer() {
             © 2026 International Conference on Supply Chain and Logistics Engineering (SCaLE)
           </p>
           <p className="mt-2">
-            Hosted by the University of Moratuwa, Sri Lanka
-          </p>
-          <p className="mt-4 text-xs text-gray-500">
-            Technical Co-Sponsorship: Society of Transport and Logistics
+            Hosted by the Department of Transport Management and Logistics Engineering, University of Moratuwa, Sri Lanka
           </p>
         </div>
       </div>

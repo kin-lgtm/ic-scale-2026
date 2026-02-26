@@ -16,13 +16,25 @@ export default function About() {
       {/* Full Description */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              The International Conference on Supply Chain and Logistics Engineering (SCaLE 2026) is an international academic forum organized by the University of Moratuwa, Sri Lanka. SCaLE is designed to bring together researchers, industry practitioners, and policymakers to exchange knowledge, present cutting-edge research, and discuss future directions in supply chain and logistics engineering.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              The conference places particular emphasis on contextualizing global theories, models, and technological solutions to the unique economic, infrastructural, and institutional realities of South Asia and other developing and emerging economies.
-            </p>
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+            {/* Logo */}
+            <div className="flex-shrink-0 mr-24">
+              <img 
+                src="/scale-logo-dark.png" 
+                alt="SCaLE 2026 Logo" 
+                className="w-90 h-auto"
+              />
+            </div>
+            
+            {/* Text Content */}
+            <div className="flex-1">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                The International Conference on Supply Chain and Logistics Engineering (SCaLE 2026) is an international academic forum organized by the University of Moratuwa, Sri Lanka. SCaLE is designed to bring together researchers, industry practitioners, and policymakers to exchange knowledge, present cutting-edge research, and discuss future directions in supply chain and logistics engineering.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                The conference places particular emphasis on contextualizing global theories, models, and technological solutions to the unique economic, infrastructural, and institutional realities of South Asia and other developing and emerging economies.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -147,12 +159,11 @@ export default function About() {
             <div className="flex justify-center">
               <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-[#492B6F] hover:shadow-xl transition-shadow max-w-md">
                 <div className="flex flex-col items-center text-center">
-                  <div className="relative mb-4">
-                    <div className="absolute inset-0 bg-[#492B6F]/30 rounded-full blur-xl"></div>
+                  <div className="w-40 h-40 rounded-full overflow-hidden mb-3 border-2 border-[#492B6F]/30">
                     <img 
                       src={amilaImage} 
                       alt="Prof. Amila Thibbotuwawa" 
-                      className="relative w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Prof. Amila Thibbotuwawa</h4>
@@ -166,19 +177,80 @@ export default function About() {
           <div className="max-w-6xl mx-auto mb-12">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Organizing Committee</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div key={i} className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-24 h-24 bg-gradient-to-br from-[#492B6F]/20 to-gray-100 rounded-full flex items-center justify-center mb-3 border-2 border-[#492B6F]/30">
-                      <svg className="w-12 h-12 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                    </div>
-                    <h5 className="font-semibold text-gray-900 mb-1">Member {i}</h5>
-                    <p className="text-sm text-gray-500">To be updated</p>
+              {/* Member 1 - H. Niles Perera */}
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-40 h-40 rounded-full overflow-hidden mb-3 border-2 border-[#492B6F]/30">
+                    <img 
+                      src="/images/oc/niles.jpg" 
+                      alt="Professor H. Niles Perera" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
+                  <h5 className="font-semibold text-gray-900 mb-1">Professor H. Niles Perera</h5>
+                  <p className="text-sm text-gray-600">Senior Lecturer, University of Moratuwa</p>
                 </div>
-              ))}
+              </div>
+
+              {/* Member 2 - Jayani Ishara Sudusinghe */}
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-40 h-40 rounded-full overflow-hidden mb-3 border-2 border-[#492B6F]/30">
+                    <img 
+                      src="/images/oc/Jayani.jpg" 
+                      alt="Dr. Jayani Ishara Sudusinghe" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h5 className="font-semibold text-gray-900 mb-1">Dr. Jayani Ishara Sudusinghe</h5>
+                  <p className="text-sm text-gray-600">Senior Lecturer, University of Moratuwa</p>
+                </div>
+              </div>
+
+              {/* Member 3 - Biman Darshana Hettiarachchi */}
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-40 h-40 rounded-full overflow-hidden mb-3 border-2 border-[#492B6F]/30">
+                    <img 
+                      src="/images/oc/Biman.jpg" 
+                      alt="Dr. Biman Darshana Hettiarachchi" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h5 className="font-semibold text-gray-900 mb-1">Dr. Biman Darshana Hettiarachchi</h5>
+                  <p className="text-sm text-gray-600">Senior Lecturer, University of Moratuwa</p>
+                </div>
+              </div>
+
+              {/* Member 4 - Madushan Madhava Jayalath */}
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-40 h-40 rounded-full overflow-hidden mb-3 border-2 border-[#492B6F]/30">
+                    <img 
+                      src="/images/oc/Madushan Jayalath.jpeg" 
+                      alt="Dr. Madushan Madhava Jayalath" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h5 className="font-semibold text-gray-900 mb-1">Dr. Madushan Madhava Jayalath</h5>
+                  <p className="text-sm text-gray-600">Senior Lecturer, University of Moratuwa</p>
+                </div>
+              </div>
+
+              {/* Member 5 - W. Madushan Fernando */}
+              <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-40 h-40 rounded-full overflow-hidden mb-3 border-2 border-[#492B6F]/30">
+                    <img 
+                      src="/images/oc/Madushan Fernando.jpeg" 
+                      alt="Dr. W. Madushan Fernando" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h5 className="font-semibold text-gray-900 mb-1">Dr. W. Madushan Fernando</h5>
+                  <p className="text-sm text-gray-600">Senior Lecturer, University of Moratuwa</p>
+                </div>
+              </div>
             </div>
           </div>
 

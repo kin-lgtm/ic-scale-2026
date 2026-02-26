@@ -53,18 +53,32 @@ export default function Venue() {
               </div>
             </div>
 
-            {/* Right Column - Map Placeholder */}
+            {/* Right Column - Map */}
             <div>
-              <div className="bg-gray-100 rounded-lg h-96 flex items-center justify-center border-2 border-gray-300">
-                <div className="text-center">
-                  <svg className="h-24 w-24 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <p className="text-gray-500 text-lg font-medium">Map Location</p>
-                  <p className="text-gray-400 text-sm mt-2">University of Moratuwa, Sri Lanka</p>
-                </div>
+              <div className="rounded-lg h-96 overflow-hidden relative">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.3545789392186!2d79.89707207499658!3d6.8447743931073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a51d07d56f9%3A0xcb89ef498871ebcf!2sUniversity%20of%20Moratuwa!5e0!3m2!1sen!2slk!4v1709016000000!5m2!1sen!2slk"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="University of Moratuwa Location"
+                ></iframe>
               </div>
+              <a
+                href="https://maps.app.goo.gl/zrzR2g8wFY2bgZfZ9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#492B6F] hover:bg-[#B4A5ED] transition-colors duration-200"
+              >
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Open in Google Maps
+              </a>
             </div>
           </div>
         </div>

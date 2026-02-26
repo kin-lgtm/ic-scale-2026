@@ -78,7 +78,7 @@ export default function Program() {
                   </div>
                   <div className="md:col-span-2 p-8">
                     <div className="mb-4">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Prof. Niles</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Prof. Niles Perera</h3>
                       <p className="text-lg text-[#492B6F] font-semibold mb-1">Keynote Speaker</p>
                       <p className="text-gray-600">Distinguished Researcher</p>
                     </div>

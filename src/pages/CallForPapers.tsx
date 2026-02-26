@@ -143,22 +143,21 @@ export default function CallForPapers() {
             {/* Submission Categories */}
             <div className="space-y-8 mb-12">
               <div className="bg-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Extended Abstracts</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Abstracts</h3>
                 <div className="space-y-3 text-gray-700">
-                  <p><strong>Length:</strong> 2–4 pages</p>
+                  <p><strong>Length:</strong> 1 page</p>
                   <p><strong>Suitable for:</strong> Early-stage research, industry case studies, and conceptual frameworks</p>
-                  <p><strong>Presentation:</strong> Accepted abstracts will be presented at the conference</p>
-                  <p><strong>Publication:</strong> Published in the SCaLE 2026 Abstract Book (ISBN)</p>
+                  <p><strong>Presentation and publication:</strong> Accepted abstracts will be published in the conference proceedings after acceptance (subject to review)</p>
                 </div>
               </div>
 
               <div className="bg-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">2. Full Research Papers</h3>
                 <div className="space-y-3 text-gray-700">
-                  <p><strong>Length:</strong> 8–12 pages</p>
+                  <p><strong>Length:</strong> 12–15 pages (As per the Springer Guidelines)</p>
                   <p><strong>Suitable for:</strong> Completed research with strong methodological rigor</p>
-                  <p><strong>Publication:</strong> Accepted papers will be published in the SCaLE 2026 Conference Proceedings (ISBN)</p>
-                  <p><strong>Special Opportunity:</strong> Selected papers will be invited for Springer-edited book chapters (subject to additional review)</p>
+                  <p><strong>Publication:</strong> Accepted papers will be published in the Springer-edited book chapters (subject to review)</p>
+                  <p><strong>Presentation:</strong> Accepted papers will be presented at the conference</p>
                 </div>
               </div>
             </div>
@@ -177,18 +176,6 @@ export default function CallForPapers() {
                   </div>
                   <div className="ml-4">
                     <p className="text-gray-700">All submissions undergo double-blind peer review</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-10 w-10 rounded-md bg-[#492B6F] text-white">
-                      <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="ml-4">
-                    <p className="text-gray-700">Extended abstracts are reviewed for relevance, originality, and clarity</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -220,7 +207,7 @@ export default function CallForPapers() {
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
-            {/* Extended Abstracts */}
+            {/* Abstracts */}
             <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
@@ -231,53 +218,27 @@ export default function CallForPapers() {
                   </div>
                 </div>
                 <div className="ml-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Abstract Book</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Abstracts</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Extended abstracts will be published in the official <strong>SCaLE 2026 Abstract Book</strong> with ISBN. This publication provides a platform for early-stage research, industry case studies, and conceptual frameworks.
+                    Accepted abstracts will be published in a conference proceedings with ISBN after acceptance. This publication provides a platform for early-stage research, industry case studies, and conceptual frameworks.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Conference Proceedings */}
+            {/* Conference Proceedings as Springer Book Chapter Series */}
             <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-[#492B6F] rounded-lg flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                    </svg>
+                  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2">
+                    <img src="/springer-logo.png" alt="Springer" className="w-full h-full object-contain" />
                   </div>
                 </div>
                 <div className="ml-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Conference Proceedings</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Conference Proceedings as Springer Book Chapter Series</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Full papers will be published in the <strong>SCaLE 2026 Conference Proceedings</strong> with ISBN. These proceedings will feature completed research papers with strong methodological rigor and significant contributions to the field.
+                    Accepted full papers will be published as chapters in a <strong>Springer-edited book volume</strong>. These proceedings will feature completed research papers with strong methodological rigour and significant contributions to the field.
                   </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Springer Book Chapter */}
-            <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-[#492B6F] rounded-lg flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="ml-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Springer Book Chapter</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Selected high-quality papers will be invited for publication as chapters in a <strong>Springer-edited book volume</strong>. These papers will undergo additional review to ensure the highest academic standards.
-                  </p>
-                  <div className="mt-4 bg-white p-4 rounded-md border border-[#492B6F]/30">
-                    <p className="text-sm text-gray-600">
-                      <strong>Note:</strong> Invitation will be based on review scores, research quality, and relevance to the book theme.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -286,7 +247,7 @@ export default function CallForPapers() {
             <div className="bg-white p-8 rounded-lg shadow-md border-2 border-gray-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Indexing Status</h3>
               <p className="text-gray-700 leading-relaxed text-center text-lg">
-                SCaLE is a newly established conference working towards indexing eligibility. We are committed to maintaining high academic standards and pursuing recognition from major indexing databases in future editions.
+                We are committed to maintaining high academic standards and pursuing recognition from major indexing databases, including Scopus.
               </p>
             </div>
             {/* Call to Action */}

@@ -75,7 +75,7 @@ export default function Navbar() {
                   : 'text-gray-700 hover:text-[#492B6F]'
               }`}
             >
-              PG Colloquium
+              Postgraduate Colloquium
             </Link>
             <Link 
               to="/contact" 
