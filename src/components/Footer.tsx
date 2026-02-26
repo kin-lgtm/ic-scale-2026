@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-white text-xl font-bold mb-4">
-              IC-SCALE <span className="text-[#C4B5FD]">2026</span>
-            </h3>
+            <div className="mb-4">
+              <img src="/logo.png" alt="SCaLE 2026" className="h-16" />
+            </div>
             <p className="text-sm leading-relaxed mb-4">
               International Conference on Supply Chain and Logistics Engineering
             </p>
@@ -24,17 +24,12 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/about" className="hover:text-[#C4B5FD] transition-colors">
+                <Link to="/about" className="hover:text-[#492B6F] transition-colors">
                   About Conference
                 </Link>
               </li>
               <li>
-                <Link to="/themes" className="hover:text-[#C4B5FD] transition-colors">
-                  Conference Themes
-                </Link>
-              </li>
-              <li>
-                <Link to="/important-dates" className="hover:text-[#C4B5FD] transition-colors">
+                <Link to="/important-dates" className="hover:text-[#492B6F] transition-colors">
                   Important Dates
                 </Link>
               </li>
@@ -46,17 +41,17 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">More Information</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/venue" className="hover:text-[#C4B5FD] transition-colors">
+                <Link to="/venue" className="hover:text-[#492B6F] transition-colors">
                   Venue & Travel
                 </Link>
               </li>
               <li>
-                <Link to="/registration" className="hover:text-[#C4B5FD] transition-colors">
+                <Link to="/registration" className="hover:text-[#492B6F] transition-colors">
                   Registration
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[#C4B5FD] transition-colors">
+                <Link to="/contact" className="hover:text-[#492B6F] transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -67,7 +62,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
           <p>
-            © 2026 International Conference on Supply Chain and Logistics Engineering (IC-SCALE)
+            © 2026 International Conference on Supply Chain and Logistics Engineering (SCaLE)
           </p>
           <p className="mt-2">
             Hosted by the University of Moratuwa, Sri Lanka

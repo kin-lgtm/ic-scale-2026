@@ -51,12 +51,12 @@ export default function ImportantDates() {
   return (
     <div className="bg-white">
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-[#C4B5FD]/20 to-white py-16">
+      <section className="bg-gradient-to-r from-[#492B6F]/20 to-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Important Dates
           </h1>
-          <div className="w-24 h-1 bg-[#C4B5FD]"></div>
+          <div className="w-24 h-1 bg-[#492B6F]"></div>
         </div>
       </section>
 
@@ -65,13 +65,13 @@ export default function ImportantDates() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
             {/* Vertical Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-[#C4B5FD]/30 hidden md:block"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-[#492B6F]/30 hidden md:block"></div>
 
             <div className="space-y-8">
               {dates.map((item, index) => (
-                <div key={index} className={`relative flex items-start ${item.highlight ? 'bg-[#C4B5FD]/10 p-6 rounded-lg -ml-6 -mr-6' : ''}`}>
+                <div key={index} className={`relative flex items-start ${item.highlight ? 'bg-[#492B6F]/10 p-6 rounded-lg -ml-6 -mr-6' : ''}`}>
                   {/* Icon */}
-                  <div className={`flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center ${item.highlight ? 'bg-[#C4B5FD] text-white' : 'bg-gray-200 text-[#C4B5FD]'} relative z-10`}>
+                  <div className={`flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center ${item.highlight ? 'bg-[#492B6F] text-white' : 'bg-gray-200 text-[#492B6F]'} relative z-10`}>
                     {item.icon}
                   </div>
 
@@ -80,20 +80,13 @@ export default function ImportantDates() {
                     <h3 className={`text-xl font-bold mb-2 ${item.highlight ? 'text-gray-900' : 'text-gray-800'}`}>
                       {item.event}
                     </h3>
-                    <p className={`text-lg ${item.highlight ? 'text-[#C4B5FD] font-semibold' : 'text-gray-600'}`}>
+                    <p className={`text-lg ${item.highlight ? 'text-[#492B6F] font-semibold' : 'text-gray-600'}`}>
                       {item.date}
                     </p>
                   </div>
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Note */}
-          <div className="mt-12 bg-gray-50 p-6 rounded-lg border-l-4 border-[#C4B5FD]">
-            <p className="text-gray-700">
-              <strong>Note:</strong> Specific dates for abstract and paper submissions will be announced soon. Please check back regularly for updates or subscribe to our mailing list for notifications.
-            </p>
           </div>
         </div>
       </section>

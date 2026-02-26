@@ -13,6 +13,7 @@ import Registration from './pages/Registration.tsx';
 import Contact from './pages/Contact.tsx';
 import CallForPapers from './pages/CallForPapers.tsx';
 import Program from './pages/Program.tsx';
+import PostgraduateColloquium from './pages/PostgraduateColloquium.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="call-for-papers" element={<CallForPapers />} />
           <Route path="program" element={<Program />} />
           <Route path="important-dates" element={<ImportantDates />} />
+          <Route path="postgraduate-colloquium" element={<PostgraduateColloquium />} />
           <Route path="venue" element={<Venue />} />
           <Route path="registration" element={<Registration />} />
           <Route path="contact" element={<Contact />} />
