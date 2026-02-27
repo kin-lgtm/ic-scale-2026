@@ -5,6 +5,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -123,6 +125,7 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link 
               to="/" 
+              onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
                 location.pathname === '/'
                   ? 'bg-[#492B6F]/20 text-[#492B6F] font-semibold'
@@ -133,6 +136,7 @@ export default function Navbar() {
             </Link>
             <Link 
               to="/about" 
+              onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
                 location.pathname === '/about'
                   ? 'bg-[#492B6F]/20 text-[#492B6F] font-semibold'
@@ -143,6 +147,7 @@ export default function Navbar() {
             </Link>
             <Link 
               to="/call-for-papers" 
+              onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
                 location.pathname === '/call-for-papers'
                   ? 'bg-[#492B6F]/20 text-[#492B6F] font-semibold'
@@ -153,6 +158,7 @@ export default function Navbar() {
             </Link>
             <Link 
               to="/program" 
+              onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
                 location.pathname === '/program'
                   ? 'bg-[#492B6F]/20 text-[#492B6F] font-semibold'
@@ -163,6 +169,7 @@ export default function Navbar() {
             </Link>
             <Link 
               to="/important-dates" 
+              onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
                 location.pathname === '/important-dates'
                   ? 'bg-[#492B6F]/20 text-[#492B6F] font-semibold'
@@ -173,6 +180,7 @@ export default function Navbar() {
             </Link>
             <Link 
               to="/postgraduate-colloquium" 
+              onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
                 location.pathname === '/postgraduate-colloquium'
                   ? 'bg-[#492B6F]/20 text-[#492B6F] font-semibold'
@@ -183,6 +191,7 @@ export default function Navbar() {
             </Link>
             <Link 
               to="/contact" 
+              onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
                 location.pathname === '/contact'
                   ? 'bg-[#492B6F]/20 text-[#492B6F] font-semibold'
@@ -193,6 +202,7 @@ export default function Navbar() {
             </Link>
             <Link 
               to="/registration" 
+              onClick={closeMenu}
               className={`block mx-3 mt-2 px-3 py-2 text-center rounded-lg font-medium ${
                 location.pathname === '/registration'
                   ? 'bg-[#B4A5ED] text-white'
