@@ -1,5 +1,4 @@
 import amilaImage from '../assets/amila.jpg';
-import nilesImage from '../assets/niles.jpg';
 
 export default function Program() {
   return (
@@ -63,36 +62,17 @@ export default function Program() {
                 </div>
               </div>
 
-              {/* Speaker 2 - Niles */}
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-shadow">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <div className="md:col-span-1 bg-gradient-to-br from-[#492B6F]/20 to-white p-8 flex items-center justify-center">
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-[#492B6F]/30 rounded-full blur-2xl"></div>
-                      <img 
-                        src={nilesImage} 
-                        alt="Prof. Niles" 
-                        className="relative w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
-                      />
-                    </div>
+              {/* Additional Speakers - TBD */}
+              <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-12 rounded-xl border-2 border-[#492B6F]/30 text-center">
+                <div className="max-w-2xl mx-auto">
+                  <div className="w-20 h-20 bg-[#492B6F]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg className="w-10 h-10 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
                   </div>
-                  <div className="md:col-span-2 p-8">
-                    <div className="mb-4">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Prof. Niles Perera</h3>
-                      <p className="text-lg text-[#492B6F] font-semibold mb-1">Keynote Speaker</p>
-                      <p className="text-gray-600">Distinguished Researcher</p>
-                    </div>
-                    <div className="prose prose-gray max-w-none">
-                      <p className="text-gray-700 leading-relaxed mb-4">
-                        Professor Niles is a distinguished researcher and thought leader in the field of supply chain management and logistics. With a proven track record of groundbreaking research and industry collaboration, Prof. Niles brings valuable insights into modern supply chain challenges and innovative solutions.
-                      </p>
-                      <div className="flex flex-wrap gap-2 mt-4">
-                        <span className="px-3 py-1 bg-[#492B6F]/10 text-[#492B6F] rounded-full text-sm font-medium">Smart Logistics</span>
-                        <span className="px-3 py-1 bg-[#492B6F]/10 text-[#492B6F] rounded-full text-sm font-medium">Digital Transformation</span>
-                        <span className="px-3 py-1 bg-[#492B6F]/10 text-[#492B6F] rounded-full text-sm font-medium">Industry 4.0</span>
-                      </div>
-                    </div>
-                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Additional Keynote Speakers</h3>
+                  <p className="text-lg text-gray-600">To Be Announced</p>
+                  <p className="text-gray-500 mt-4">We are pleased to confirm additional distinguished keynote speakers who will share their expertise at SCaLE 2026. Details will be announced soon.</p>
                 </div>
               </div>
             </div>

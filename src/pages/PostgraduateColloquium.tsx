@@ -99,7 +99,7 @@ export default function PostgraduateColloquium() {
                     </svg>
                     <div>
                       <p className="font-semibold">Application Deadline:</p>
-                      <p>TBD</p>
+                      <p>June 30, 2026</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -108,7 +108,7 @@ export default function PostgraduateColloquium() {
                     </svg>
                     <div>
                       <p className="font-semibold">Notification of Acceptance:</p>
-                      <p>TBD</p>
+                      <p>August 10, 2026</p>
                     </div>
                   </div>
                 </div>

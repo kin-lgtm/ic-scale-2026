@@ -92,7 +92,7 @@ export default function Contact() {
               {/* Department Image */}
               <div className="mt-auto">
                 <img 
-                  src="/department.png" 
+                  src="/TMLE Labs.jpeg" 
                   alt="Department of Transport Management and Logistics Engineering" 
                   className="w-full h-auto rounded-lg shadow-lg object-cover"
                 />
