@@ -28,11 +28,11 @@ export default function Footer() {
                   About Conference
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/important-dates" className="hover:text-[#492B6F] transition-colors">
                   Important Dates
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

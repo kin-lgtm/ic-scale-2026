@@ -1,18 +1,25 @@
 import { Link } from 'react-router-dom';
+import { useScrollAnimation } from '../hooks/useScrollAnimation.ts';
 
 export default function Home() {
+  const section1 = useScrollAnimation();
+  const section2 = useScrollAnimation();
+  const section3 = useScrollAnimation();
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 md:py-32">
-        {/* Background Image - Left Half */}
-        <div className="absolute inset-y-0 left-0 w-1/2 hidden md:block">
-          <img 
-            src="/images/TMLE.jpg" 
-            alt="Conference Background" 
-            className="w-full h-full object-cover opacity-20"
+        {/* Background Video - Full Width */}
+        <div className="absolute inset-0">
+          <iframe
+            className="w-full h-full object-cover opacity-40"
+            src="https://www.youtube.com/embed/yJbyNK1BCq4?autoplay=1&mute=1&loop=1&playlist=yJbyNK1BCq4&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+            title="Background Video"
+            allow="autoplay; encrypted-media"
+            style={{ pointerEvents: 'none', transform: 'scale(1.5)' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-l from-white via-white/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-white/50"></div>
         </div>
 
         {/* Content */}
@@ -22,11 +29,12 @@ export default function Home() {
               International Conference on<br />
               <span className="text-[#492B6F]">Supply Chain and Logistics Engineering</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-600 mb-6 max-w-4xl mx-auto">
               Advancing Engineering Solutions for Sustainable, Resilient, and Digital Supply Chains
             </p>
+            <div className="w-80 h-1 bg-[#492B6F] mx-auto mb-4"></div>
             
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
+            {/* <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
               <div className="flex items-center gap-2 text-gray-700">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
@@ -39,7 +47,7 @@ export default function Home() {
                 </svg>
                 <span className="font-semibold">University of Moratuwa, Sri Lanka</span>
               </div>
-            </div>
+            </div> */}
 
             <p className="text-gray-600 max-w-4xl mx-auto mb-10 text-lg leading-relaxed">
               SCaLE 2026 is an international forum dedicated to advancing research and practice in supply chain and logistics engineering, with a strong emphasis on emerging economies and South Asian contexts.
@@ -70,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* About Preview Section */}
-      <section className="py-16 bg-gray-50">
+      <section ref={section1.elementRef} className={`py-16 bg-gray-50 animate-on-scroll ${section1.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -93,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* Conference Highlights */}
-      <section className="py-16">
+      <section ref={section2.elementRef} className={`py-16 animate-on-scroll ${section2.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-white rounded-lg shadow-md border-2 border-[#492B6F]">
@@ -103,7 +111,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Research Papers</h3>
-              <p className="text-gray-600">Submit abstracts or full research papers across 8 specialized tracks</p>
+              <p className="text-gray-600">Submit Extended Abstracts or full research papers across 8 specialized tracks</p>
             </div>
 
             <div className="text-center p-6 bg-white rounded-lg shadow-md border-2 border-[#492B6F]">
@@ -130,7 +138,7 @@ export default function Home() {
       </section>
 
       {/* Sponsors Section */}
-      <section className="py-16 bg-gray-50">
+      <section ref={section3.elementRef} className={`py-16 bg-gray-50 animate-on-scroll ${section3.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-4">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

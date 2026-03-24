@@ -1,10 +1,34 @@
 import amilaImage from '../assets/amila.jpg';
+import { useScrollAnimation } from '../hooks/useScrollAnimation.ts';
 
 export default function Program() {
+  const section1 = useScrollAnimation();
+
   return (
-    <div className="bg-white">
+    <div className="bg-white relative overflow-hidden">
+      {/* Decorative Background Pattern */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Top Right Curves */}
+        <svg className="absolute top-0 right-0 w-1/2 h-1/2 opacity-20" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M400 0C400 110.457 310.457 200 200 200C89.543 200 0 110.457 0 0" stroke="#B4A5ED" strokeWidth="1.5"/>
+          <path d="M450 0C450 138.071 338.071 250 200 250C61.929 250 -50 138.071 -50 0" stroke="#B4A5ED" strokeWidth="1.5"/>
+          <path d="M500 0C500 165.685 365.685 300 200 300C34.315 300 -100 165.685 -100 0" stroke="#B4A5ED" strokeWidth="1.5"/>
+          <path d="M550 0C550 193.299 393.299 350 200 350C6.701 350 -150 193.299 -150 0" stroke="#B4A5ED" strokeWidth="1.5"/>
+          <path d="M600 0C600 220.914 420.914 400 200 400C-20.914 400 -200 220.914 -200 0" stroke="#B4A5ED" strokeWidth="1.5"/>
+        </svg>
+        
+        {/* Bottom Left Curves */}
+        <svg className="absolute bottom-0 left-0 w-1/2 h-1/2 opacity-20" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 500C100 389.543 189.543 300 300 300C410.457 300 500 389.543 500 500" stroke="#B4A5ED" strokeWidth="1.5"/>
+          <path d="M50 500C50 361.929 161.929 250 300 250C438.071 250 550 361.929 550 500" stroke="#B4A5ED" strokeWidth="1.5"/>
+          <path d="M0 500C0 334.315 134.315 200 300 200C465.685 200 600 334.315 600 500" stroke="#B4A5ED" strokeWidth="1.5"/>
+          <path d="M-50 500C-50 306.701 106.701 150 300 150C493.299 150 650 306.701 650 500" stroke="#B4A5ED" strokeWidth="1.5"/>
+          <path d="M-100 500C-100 279.086 79.086 100 300 100C520.914 100 700 279.086 700 500" stroke="#B4A5ED" strokeWidth="1.5"/>
+        </svg>
+      </div>
+
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-[#492B6F]/20 to-white py-16">
+      <section className="relative bg-gradient-to-r from-[#492B6F]/20 to-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Keynote Speakers
@@ -14,7 +38,7 @@ export default function Program() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-16">
+      <section ref={section1.elementRef} className={`relative py-16 animate-on-scroll ${section1.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -81,7 +105,7 @@ export default function Program() {
       </section>
 
       {/* Proposed Keynote Themes */}
-      <section className="py-16 bg-gray-50">
+      <section className="relative py-16 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Proposed Keynote Themes</h2>

@@ -1,4 +1,10 @@
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
+
 export default function CallForPapers() {
+  const section1 = useScrollAnimation();
+  const section2 = useScrollAnimation();
+  const section3 = useScrollAnimation();
+
   const tracks = [
     {
       number: 1,
@@ -93,8 +99,10 @@ export default function CallForPapers() {
         </div>
       </section>
 
+      
+
       {/* Tracks Section */}
-      <section className="py-16">
+      <section ref={section1.elementRef} className={`py-16 animate-on-scroll ${section1.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {tracks.map((track) => (
@@ -125,8 +133,59 @@ export default function CallForPapers() {
         </div>
       </section>
 
-      {/* Call for Papers Section */}
+      {/* Important Dates Section - Top Priority */}
       <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Important Dates
+            </h2>
+            <div className="w-24 h-1 bg-[#492B6F] mx-auto"></div>
+          </div>
+
+          <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead className="bg-[#492B6F] text-white">
+                  <tr>
+                    <th className="px-6 py-4 text-left text-sm font-bold uppercase tracking-wider">Event</th>
+                    <th className="px-6 py-4 text-left text-sm font-bold uppercase tracking-wider">Date</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200">
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="px-6 py-4 text-gray-900 font-medium">Full Paper Submission Deadline</td>
+                    <td className="px-6 py-4 text-gray-700">June 1, 2026</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="px-6 py-4 text-gray-900 font-medium">Extended Abstract Submission Deadline</td>
+                    <td className="px-6 py-4 text-gray-700">June 30, 2026</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance</td>
+                    <td className="px-6 py-4 text-gray-700">August 10, 2026</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="px-6 py-4 text-gray-900 font-medium">Camera-Ready Submission Deadline</td>
+                    <td className="px-6 py-4 text-gray-700">August 30, 2026</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="px-6 py-4 text-gray-900 font-medium">Registration Opens</td>
+                    <td className="px-6 py-4 text-gray-700">September 1, 2026</td>
+                  </tr>
+                  <tr className="bg-[#492B6F]/10 hover:bg-[#492B6F]/20 transition-colors">
+                    <td className="px-6 py-4 text-gray-900 font-bold">Conference Dates</td>
+                    <td className="px-6 py-4 text-[#492B6F] font-bold">November 16-17, 2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Call for Papers Section */}
+      <section ref={section2.elementRef} className={`py-16 bg-gray-50 animate-on-scroll ${section2.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -143,11 +202,11 @@ export default function CallForPapers() {
             {/* Submission Categories */}
             <div className="space-y-8 mb-12">
               <div className="bg-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Abstracts</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Extended Abstracts</h3>
                 <div className="space-y-3 text-gray-700">
                   <p><strong>Length:</strong> 1 page</p>
                   <p><strong>Suitable for:</strong> Early-stage research, industry case studies, and conceptual frameworks</p>
-                  <p><strong>Presentation and publication:</strong> Accepted abstracts will be published in the conference proceedings after acceptance (subject to review)</p>
+                  <p><strong>Presentation and publication:</strong> Accepted Extended Abstracts will be published in the conference proceedings after acceptance (subject to review)</p>
                 </div>
               </div>
 
@@ -197,7 +256,7 @@ export default function CallForPapers() {
       </section>
 
       {/* Publication Section */}
-      <section className="py-16">
+      <section ref={section3.elementRef} className={`py-16 animate-on-scroll ${section3.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -207,7 +266,7 @@ export default function CallForPapers() {
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
-            {/* Abstracts */}
+            {/* Extended Abstracts */}
             <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
@@ -220,7 +279,7 @@ export default function CallForPapers() {
                 <div className="ml-6">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Abstracts</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Accepted abstracts will be published in a conference proceedings with ISBN after acceptance. This publication provides a platform for early-stage research, industry case studies, and conceptual frameworks.
+                    Accepted Extended Abstracts will be published in a conference proceedings with ISBN after acceptance. This publication provides a platform for early-stage research, industry case studies, and conceptual frameworks.
                   </p>
                 </div>
               </div>
@@ -235,9 +294,9 @@ export default function CallForPapers() {
                   </div>
                 </div>
                 <div className="ml-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Conference Proceedings as Springer Book Chapter Series</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Conference Proceedings as Prestigious Book Chapter Series</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Accepted full papers will be published as chapters in a <strong>Springer-edited book volume</strong>. These proceedings will feature completed research papers with strong methodological rigour and significant contributions to the field.
+                    Accepted full papers will be published as chapters in a <strong>Prestigious-edited book volume</strong>. These proceedings will feature completed research papers with strong methodological rigour and significant contributions to the field.
                   </p>
                 </div>
               </div>

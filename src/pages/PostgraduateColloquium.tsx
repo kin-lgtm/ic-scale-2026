@@ -1,4 +1,10 @@
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
+
 export default function PostgraduateColloquium() {
+  const section1 = useScrollAnimation();
+  const section2 = useScrollAnimation();
+  const section3 = useScrollAnimation();
+
   return (
     <div className="bg-white">
       {/* Hero Section / Banner */}
@@ -17,8 +23,17 @@ export default function PostgraduateColloquium() {
       </section>
 
       {/* Event Overview Section */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section ref={section1.elementRef} className={`relative py-16 animate-on-scroll ${section1.isVisible ? 'visible' : ''}`}>
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="images/TMLE.jpg" 
+            alt="Postgraduate Colloquium Background" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-[#492B6F]/90 to-white/95"></div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Event Overview
@@ -30,39 +45,55 @@ export default function PostgraduateColloquium() {
             {/* Left Column - Description */}
             <div className="space-y-8">
               {/* Objective */}
-              <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-6 rounded-lg border-2 border-[#492B6F]">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Objective</h3>
-                <ul className="space-y-3 text-gray-700">
+              <div className="bg-white/95 backdrop-blur-sm p-6 rounded-lg border-2 border-white shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Objective</h3>
+                <ul className="space-y-4 text-gray-800">
                   <li className="flex items-start">
-                    <svg className="h-6 w-6 text-[#492B6F] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>Provide a platform for postgraduate students to submit research abstracts</span>
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-10 w-10 rounded-md bg-[#492B6F] text-white">
+                        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className="ml-4 font-medium">Provide a platform for postgraduate students to submit research Extended Abstracts</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="h-6 w-6 text-[#492B6F] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>Offer guidance and mentorship from experienced researchers</span>
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-10 w-10 rounded-md bg-[#492B6F] text-white">
+                        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className="ml-4 font-medium">Offer guidance and mentorship from experienced researchers</span>
                   </li>
                   <li className="flex items-start">
-                    <svg className="h-6 w-6 text-[#492B6F] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span>Encourage networking and academic discussions in a supportive environment</span>
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-10 w-10 rounded-md bg-[#492B6F] text-white">
+                        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className="ml-4 font-medium">Encourage networking and academic discussions in a supportive environment</span>
                   </li>
                 </ul>
               </div>
 
               {/* Who Should Apply */}
-              <div className="bg-white p-6 rounded-lg border-2 border-gray-200 shadow-md">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Who Should Apply</h3>
-                <ul className="space-y-3 text-gray-700">
+              <div className="bg-white/95 backdrop-blur-sm p-6 rounded-lg border-2 border-white shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Who Should Apply</h3>
+                <ul className="space-y-4 text-gray-800">
                   <li className="flex items-start">
-                    <svg className="h-6 w-6 text-[#492B6F] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                    <span>Postgraduate students from disciplines related to the conference themes, both local and international universities.</span>
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-10 w-10 rounded-md bg-[#492B6F] text-white">
+                        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className="ml-4 font-medium">Postgraduate students from disciplines related to the conference themes, both local and international universities.</span>
                   </li>
                 </ul>
               </div>
@@ -153,7 +184,7 @@ export default function PostgraduateColloquium() {
                 </div>
                 <div className="ml-4">
                   <p className="text-gray-700">
-                    Abstracts must be <strong>original and unpublished</strong>
+                    Extended Abstracts must be <strong>original and unpublished</strong>
                   </p>
                 </div>
               </div>
@@ -193,7 +224,7 @@ export default function PostgraduateColloquium() {
       </section> */}
 
       {/* Evaluation Process Section */}
-      <section className="py-16">
+      <section ref={section2.elementRef} className={`py-16 animate-on-scroll ${section2.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -212,7 +243,7 @@ export default function PostgraduateColloquium() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Expert Review</h3>
                 <p className="text-gray-700">
-                  Abstracts reviewed by a panel of academic experts
+                  Extended Abstracts reviewed by a panel of academic experts
                 </p>
               </div>
 
@@ -224,7 +255,7 @@ export default function PostgraduateColloquium() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Discussion Sessions</h3>
                 <p className="text-gray-700">
-                  Discussant-led sessions for in-depth discussions of accepted abstracts
+                  Discussant-led sessions for in-depth discussions of accepted Extended Abstracts
                 </p>
               </div>
 
@@ -245,7 +276,7 @@ export default function PostgraduateColloquium() {
       </section>
 
       {/* Call to Action / Submission Section */}
-      <section id="submission" className="py-16 bg-gradient-to-r from-[#492B6F]/20 to-white">
+      <section ref={section3.elementRef} id="submission" className={`py-16 bg-gradient-to-r from-[#492B6F]/20 to-white animate-on-scroll ${section3.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">

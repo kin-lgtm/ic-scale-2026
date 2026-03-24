@@ -1,4 +1,8 @@
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
+
 export default function Registration() {
+  const section1 = useScrollAnimation();
+
   return (
     <div className="bg-white">
       {/* Page Header */}
@@ -12,7 +16,7 @@ export default function Registration() {
       </section>
 
       {/* Registration Content */}
-      <section className="py-16">
+      <section ref={section1.elementRef} className={`py-16 animate-on-scroll ${section1.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-700 leading-relaxed mb-12 text-center">

@@ -60,14 +60,14 @@ export default function Navbar() {
               Program
             </Link>
             <Link 
-              to="/important-dates" 
+              to="/venue" 
               className={`transition-colors font-medium ${
-                location.pathname === '/important-dates' 
+                location.pathname === '/venue' 
                   ? 'text-[#492B6F] font-semibold border-b-2 border-[#492B6F]' 
                   : 'text-gray-700 hover:text-[#492B6F]'
               }`}
             >
-              Dates
+              Travel
             </Link>
             <Link 
               to="/postgraduate-colloquium" 
@@ -168,15 +168,15 @@ export default function Navbar() {
               Program
             </Link>
             <Link 
-              to="/important-dates" 
+              to="/venue" 
               onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
-                location.pathname === '/important-dates'
+                location.pathname === '/venue'
                   ? 'bg-[#492B6F]/20 text-[#492B6F] font-semibold'
                   : 'text-gray-700 hover:bg-[#492B6F]/10 hover:text-[#492B6F]'
               }`}
             >
-              Important Dates
+              Travel & Accommodation
             </Link>
             <Link 
               to="/postgraduate-colloquium" 
