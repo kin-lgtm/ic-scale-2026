@@ -8,7 +8,7 @@ export default function About() {
   const advisoryCommittee = [
     { name: "Prof. H.N. Perera", title: "Head, Department of Transport Management and Logistic Engineering" },
     { name: "Prof. Amal S. Kumarage", title: "Emeritus Professor\nUniversity of Moratuwa" },
-    { name: "Prof. A.A.D.A.J. Perera", title: "Professor \nUniversity of Moratuwa" },
+    { name: "Prof. A.A.D.A.J. Perera", title: "Emeritus Professor\nUniversity of Moratuwa" },
     { name: "Prof. P.T.R.S. Sugathadasa", title: "Professor, University of Moratuwa" },
     { name: "Eng. (Dr.) T. Sivakumar", title: "Senior Lecturer, University of Moratuwa" },
     { name: "Dr. L.C.I. Sigera", title: "Senior Lecturer, University of Moratuwa" },
@@ -232,15 +232,18 @@ export default function About() {
           {/* Technical Co-Sponsorship */}
           <div className="max-w-6xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Technical Co-Sponsorship</h3>
-            <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 rounded-lg border-2 border-[#492B6F]">
-              <div className="flex items-center justify-center md:justify-start">
-                <div className="flex-shrink-0">
-                  <img src="/images/STL.png" alt="Society of Transport and Logistics" className="w-32 h-32 object-contain" />
+            <div className="">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-white rounded-lg p-2 shadow-md flex items-center justify-center min-h-[220px]">
+                  <img src="/images/STL.png" alt="Society of Transport and Logistics" className="w-40 h-40 md:w-44 md:h-44 object-contain" />
                 </div>
-                <div className="ml-6 text-center md:text-left">
-                  <h4 className="text-xl font-bold text-gray-900">Society of Transport and Logistics</h4>
-                  <p className="text-gray-600 mt-1">Student Body – Department of Transport Management and Logistics Engineering</p>
-                  <p className="text-gray-600">University of Moratuwa</p>
+
+                <div className="bg-white rounded-lg shadow-md flex items-center justify-center min-h-[220px]">
+                  <img src="/images/ieee_tems_uom_logo.jfif" alt="IEEE TEMS" className="w-60 h-60 md:w-64 md:h-64 object-contain" />
+                </div>
+
+                <div className="bg-white rounded-lg shadow-md flex items-center justify-center min-h-[220px]">
+                  <img src="/images/scolo.png" alt="SCOLO" className="w-60 h-60 md:w-64 md:h-64 object-contain" />
                 </div>
               </div>
             </div>

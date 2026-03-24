@@ -204,7 +204,7 @@ export default function CallForPapers() {
               <div className="bg-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Extended Abstracts</h3>
                 <div className="space-y-3 text-gray-700">
-                  <p><strong>Length:</strong> 1 page</p>
+                  <p><strong>Length:</strong> 3-4 pages</p>
                   <p><strong>Suitable for:</strong> Early-stage research, industry case studies, and conceptual frameworks</p>
                   <p><strong>Presentation and publication:</strong> Accepted Extended Abstracts will be published in the conference proceedings after acceptance (subject to review)</p>
                 </div>
@@ -289,8 +289,10 @@ export default function CallForPapers() {
             <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2">
-                    <img src="/springer-logo.png" alt="Springer" className="w-full h-full object-contain" />
+                  <div className="w-16 h-16 bg-[#492B6F] rounded-lg flex items-center justify-center">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
                   </div>
                 </div>
                 <div className="ml-6">
@@ -314,7 +316,7 @@ export default function CallForPapers() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Submit?</h3>
               <p className="text-gray-700 mb-6">Submit your paper through our conference management system</p>
               <a 
-                href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
+                href="https://www.conftool.net/ctforum/index.php?action=login"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#492B6F] text-white px-8 py-3 rounded-lg hover:bg-[#B4A5ED] transition-colors font-semibold"

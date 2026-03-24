@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useScrollAnimation } from '../hooks/useScrollAnimation.ts';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 export default function Home() {
   const section1 = useScrollAnimation();
@@ -10,16 +10,14 @@ export default function Home() {
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 md:py-32">
-        {/* Background Video - Full Width */}
-        <div className="absolute inset-0">
-          <iframe
-            className="w-full h-full object-cover opacity-40"
-            src="https://www.youtube.com/embed/yJbyNK1BCq4?autoplay=1&mute=1&loop=1&playlist=yJbyNK1BCq4&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
-            title="Background Video"
-            allow="autoplay; encrypted-media"
-            style={{ pointerEvents: 'none', transform: 'scale(1.5)' }}
+        {/* Background Image - Left Half */}
+        <div className="absolute inset-y-0 left-0 w-1/2 hidden md:block">
+          <img
+            src="/images/TMLE.jpg"
+            alt="Conference Background"
+            className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-white/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-l from-white via-white/50 to-transparent"></div>
         </div>
 
         {/* Content */}
