@@ -45,7 +45,7 @@ export default function Venue() {
                     </div>
                     <div className="ml-3">
                       <p className="text-lg font-semibold text-gray-900">Conference Dates</p>
-                      <p className="text-gray-600">16–17 November 2026</p>
+                      <p className="text-gray-600">26–27 November 2026</p>
                     </div>
                   </div>
                 </div>

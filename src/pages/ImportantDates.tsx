@@ -131,7 +131,7 @@ export default function ImportantDates() {
                 <h3 className="text-2xl font-bold text-white mb-2">Conference Dates</h3>
                 <p className="text-white/90 mb-4">Main Event</p>
                 <div className="bg-white p-4 rounded-lg">
-                  <p className="text-3xl font-bold text-[#492B6F]">November 16-17</p>
+                  <p className="text-3xl font-bold text-[#492B6F]">November 26-27</p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function ImportantDates() {
                   </tr>
                   <tr className="bg-[#492B6F]/10 hover:bg-[#492B6F]/20 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-bold">Conference Dates</td>
-                    <td className="px-6 py-4 text-[#492B6F] font-bold">November 16-17, 2026</td>
+                    <td className="px-6 py-4 text-[#492B6F] font-bold">November 26-27, 2026</td>
                   </tr>
                 </tbody>
               </table>

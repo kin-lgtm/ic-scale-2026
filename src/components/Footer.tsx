@@ -14,7 +14,7 @@ export default function Footer() {
               International Conference on Supply Chain and Logistics Engineering
             </p>
             <p className="text-sm">
-              <strong className="text-white">16-17 November 2026</strong><br />
+              <strong className="text-white">26-27 November 2026</strong><br />
               University of Moratuwa, Sri Lanka
             </p>
           </div>

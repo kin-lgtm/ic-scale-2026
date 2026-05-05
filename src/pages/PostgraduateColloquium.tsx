@@ -121,7 +121,7 @@ export default function PostgraduateColloquium() {
                     </svg>
                     <div>
                       <p className="font-semibold">Date:</p>
-                      <p>November 16, 2026</p>
+                      <p>November 26, 2026</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -299,7 +299,7 @@ export default function PostgraduateColloquium() {
                 Submit Abstract
               </a>
               <p className="text-sm text-gray-500 mt-4">
-                Deadline: April 1, 2026
+                Deadline: June 30, 2026
               </p>
             </div>
           </div>
