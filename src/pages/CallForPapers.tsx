@@ -155,7 +155,7 @@ export default function CallForPapers() {
                 <tbody className="divide-y divide-gray-200">
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Full Paper Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">June 1, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">June 30, 2026</td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Extended Abstract Submission Deadline</td>
@@ -163,7 +163,7 @@ export default function CallForPapers() {
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance</td>
-                    <td className="px-6 py-4 text-gray-700">August 10, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">August 20, 2026</td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Camera-Ready Submission Deadline</td>
@@ -213,9 +213,9 @@ export default function CallForPapers() {
               <div className="bg-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">2. Full Research Papers</h3>
                 <div className="space-y-3 text-gray-700">
-                  <p><strong>Length:</strong> 12–15 pages (As per the Springer Guidelines)</p>
+                  <p><strong>Length:</strong> 12–15 pages (As per the Conference Guidelines)</p>
                   <p><strong>Suitable for:</strong> Completed research with strong methodological rigor</p>
-                  <p><strong>Publication:</strong> Accepted papers will be published in the Springer-edited book chapters (subject to review)</p>
+                  <p><strong>Publication:</strong> Accepted papers will be published in the Prestigious-edited book volume (subject to review)</p>
                   <p><strong>Presentation:</strong> Accepted papers will be presented at the conference</p>
                 </div>
               </div>

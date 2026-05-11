@@ -119,7 +119,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Publication</h3>
-              <p className="text-gray-600">Conference proceedings with ISBN and selected papers for Springer book</p>
+              <p className="text-gray-600">Conference proceedings with ISBN and selected papers for Prestigious-edited book volume</p>
             </div>
 
             <div className="text-center p-6 bg-white rounded-lg shadow-md border-2 border-[#492B6F]">

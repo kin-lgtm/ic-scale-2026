@@ -162,7 +162,7 @@ export default function ImportantDates() {
                 <tbody className="divide-y divide-gray-200">
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Full Paper Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">June 1, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">June 30, 2026</td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Extended Abstract Submission Deadline</td>
@@ -170,7 +170,7 @@ export default function ImportantDates() {
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance</td>
-                    <td className="px-6 py-4 text-gray-700">August 10, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">August 20, 2026</td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Camera-Ready Submission Deadline</td>

@@ -139,7 +139,7 @@ export default function PostgraduateColloquium() {
                     </svg>
                     <div>
                       <p className="font-semibold">Notification of Acceptance:</p>
-                      <p>August 10, 2026</p>
+                      <p>August 20, 2026</p>
                     </div>
                   </div>
                 </div>
