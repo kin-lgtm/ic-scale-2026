@@ -1,4 +1,5 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import ExternalLink from '../components/ExternalLink';
 
 export default function CallForPapers() {
   const section1 = useScrollAnimation();
@@ -315,14 +316,13 @@ export default function CallForPapers() {
             <div className="text-center bg-gradient-to-r from-[#492B6F]/10 to-white p-8 rounded-lg border-2 border-[#492B6F]">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Submit?</h3>
               <p className="text-gray-700 mb-6">Submit your paper through our conference management system</p>
-              <a 
-                href="https://www.conftool.net/ctforum/index.php?action=login"
-                target="_blank"
-                rel="noopener noreferrer"
+              <ExternalLink 
+                href="https://scale.uom.lk/conftool/"
+                target="_self"
                 className="inline-block bg-[#492B6F] text-white px-8 py-3 rounded-lg hover:bg-[#B4A5ED] transition-colors font-semibold"
               >
                 Submit Paper
-              </a>
+              </ExternalLink>
             </div>
           </div>
         </div>

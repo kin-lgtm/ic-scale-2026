@@ -1,4 +1,5 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import ExternalLink from '../components/ExternalLink';
 
 export default function PostgraduateColloquium() {
   const section1 = useScrollAnimation();
@@ -290,14 +291,13 @@ export default function PostgraduateColloquium() {
               <p className="text-gray-700 mb-6">
                 Click the button below to access our submission portal
               </p>
-              <a 
-                href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F"
-                target="_blank"
-                rel="noopener noreferrer"
+              <ExternalLink 
+                href="https://scale.uom.lk/conftool/"
+                target="_self"
                 className="inline-block bg-[#492B6F] text-white px-10 py-4 rounded-lg hover:bg-[#B4A5ED] transition-colors font-semibold text-lg shadow-lg"
               >
                 Submit Abstract
-              </a>
+              </ExternalLink>
               <p className="text-sm text-gray-500 mt-4">
                 Deadline: June 30, 2026
               </p>

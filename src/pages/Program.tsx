@@ -1,5 +1,5 @@
-import amilaImage from '../assets/amila.jpg';
-import { useScrollAnimation } from '../hooks/useScrollAnimation.ts';
+//import amilaImage from '../assets/amila.jpg';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 export default function Program() {
   const section1 = useScrollAnimation();
@@ -54,7 +54,7 @@ export default function Program() {
               <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Featured Keynote Speakers</h2>
               
               {/* Speaker 1 - Amila */}
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-shadow">
+              {/* <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-shadow">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div className="md:col-span-1 bg-gradient-to-br from-[#492B6F]/20 to-white p-8 flex items-center justify-center">
                     <div className="relative">
@@ -84,10 +84,10 @@ export default function Program() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Additional Speakers - TBD */}
-              <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-12 rounded-xl border-2 border-[#492B6F]/30 text-center">
+              {/* <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-12 rounded-xl border-2 border-[#492B6F]/30 text-center">
                 <div className="max-w-2xl mx-auto">
                   <div className="w-20 h-20 bg-[#492B6F]/20 rounded-full flex items-center justify-center mx-auto mb-6">
                     <svg className="w-10 h-10 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,7 +98,24 @@ export default function Program() {
                   <p className="text-lg text-gray-600">To Be Announced</p>
                   <p className="text-gray-500 mt-4">We are pleased to confirm additional distinguished keynote speakers who will share their expertise at SCaLE 2026. Details will be announced soon.</p>
                 </div>
+              </div> */}
+              {/* Coming Soon Animation */}
+          <div className="flex flex-col items-center justify-center py-12">
+            <div className="relative">
+              <div className="text-4xl md:text-5xl font-bold text-[#492B6F] animate-pulse">
+                Coming Soon
               </div>
+              <div className="absolute -inset-2 bg-[#492B6F]/10 rounded-lg blur-xl animate-pulse"></div>
+            </div>
+            <p className="mt-6 text-gray-600 text-lg">
+              We're excited to announce our sponsors soon!
+            </p>
+            <div className="flex gap-2 mt-6">
+              <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+              <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+              <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+            </div>
+          </div>
             </div>
           </div>
         </div>

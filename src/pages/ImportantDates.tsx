@@ -36,7 +36,7 @@ export default function ImportantDates() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Paper Submission</h3>
                 <p className="text-gray-600 mb-4">Full Research Papers</p>
                 <div className="bg-white p-4 rounded-lg border border-[#492B6F]">
-                  <p className="text-3xl font-bold text-[#492B6F]">June 1</p>
+                  <p className="text-3xl font-bold text-[#492B6F]">June 30</p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>
