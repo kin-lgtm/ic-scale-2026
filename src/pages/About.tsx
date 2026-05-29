@@ -6,17 +6,59 @@ export default function About() {
   const section3 = useScrollAnimation();
 
   const advisoryCommittee = [
-    { name: "Prof. H.N. Perera", title: "Head, Department of Transport Management and Logistic Engineering" },
-    { name: "Prof. Amal S. Kumarage", title: "Emeritus Professor\nUniversity of Moratuwa" },
-    { name: "Prof. A.A.D.A.J. Perera", title: "Emeritus Professor\nUniversity of Moratuwa" },
-    { name: "Prof. P.T.R.S. Sugathadasa", title: "Professor, University of Moratuwa" },
-    { name: "Eng. (Dr.) T. Sivakumar", title: "Senior Lecturer, University of Moratuwa" },
-    { name: "Dr. L.C.I. Sigera", title: "Senior Lecturer, University of Moratuwa" },
-    { name: "Dr. W.W.A.S. Fernando", title: "Senior Lecturer, University of Moratuwa" },
-    { name: "Mrs. G.M.B.P. Abeysekara", title: "Senior Lecturer, University of Moratuwa" },
-    { name: "Dr. B.D. Hettiarachchi", title: "Senior Lecturer, University of Moratuwa" },
-    { name: "Dr. J.I. Sudusinghe", title: "Senior Lecturer, University of Moratuwa" }
-  ];
+  { 
+    name: "Prof. H.N. Perera", 
+    title: "Head, Department of Transport Management and Logistic Engineering",
+    image: "/images/oc/niles.jpg"
+  },
+  { 
+    name: "Prof. Amal S. Kumarage", 
+    title: "Emeritus Professor\nUniversity of Moratuwa",
+    image: "/images/oc/ac/amal.jpg"
+  },
+  { 
+    name: "Prof. A.A.D.A.J. Perera", 
+    title: "Emeritus Professor\nUniversity of Moratuwa",
+    image: "/images/oc/ac/asoka.jfif"
+  },
+  { 
+    name: "Prof. P.T.R.S. Sugathadasa", 
+    title: "Professor, University of Moratuwa",
+    image: "/images/oc/ac/Sugathadasa.jpg"
+  },
+  { 
+    name: "Eng. (Dr.) T. Sivakumar", 
+    title: "Senior Lecturer, University of Moratuwa",
+    image: "/images/oc/ac/sivakumar.jpg"
+  },
+  { 
+    name: "Dr. L.C.I. Sigera", 
+    title: "Senior Lecturer, University of Moratuwa",
+    image: "/images/oc/ac/sigera.jpg"
+  },
+  { 
+    name: "Dr. W.W.A.S. Fernando", 
+    title: "Senior Lecturer, University of Moratuwa",
+    image: "/images/oc/ac/fernando.jpg"
+  },
+  { 
+    name: "Mrs. G.M.B.P. Abeysekara", 
+    title: "Senior Lecturer, University of Moratuwa",
+    image: "/images/oc/ac/abeysekara.jpg"
+  },
+  { 
+    name: "Dr. B.D. Hettiarachchi", 
+    title: "Senior Lecturer, University of Moratuwa",
+    image: "/images/oc/ac/biman.jpg"
+  },
+  { 
+    name: "Dr. J.I. Sudusinghe", 
+    title: "Senior Lecturer, University of Moratuwa",
+    image: "/images/oc/ac/sudusinghe.jpg"
+  }
+];
+
+  
 
   return (
     <div className="bg-white">
@@ -170,86 +212,133 @@ export default function About() {
       </section>
 
       {/* Conference Committees */}
-      <section ref={section3.elementRef} className={`py-16 animate-on-scroll ${section3.isVisible ? 'visible' : ''}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Conference Committees
-            </h2>
-            <div className="w-24 h-1 bg-[#492B6F] mx-auto"></div>
-          </div>
+<section ref={section3.elementRef} className={`py-16 animate-on-scroll ${section3.isVisible ? 'visible' : ''}`}>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Conference Committees
+      </h2>
+      <div className="w-24 h-1 bg-[#492B6F] mx-auto"></div>
+    </div>
 
-          {/* Conference Chair */}
-          <div className="max-w-6xl mx-auto mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Conference Chair</h3>
-            <div className="flex justify-center">
-              <div className="bg-gradient-to-br from-[#492B6F]/20 to-white p-8 rounded-xl shadow-lg border-2 border-[#492B6F] hover:shadow-xl transition-shadow max-w-md">
-                <div className="flex flex-col items-center text-center">
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Prof. Amila Thibbotuwawa</h4>
-                  <p className="text-gray-600">University of Moratuwa</p>
-                </div>
-              </div>
+    {/* Conference Chair */}
+    <div className="max-w-6xl mx-auto mb-16">
+      <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Conference Chair</h3>
+      <div className="flex justify-center">
+        <div className="group w-full max-w-md">
+          <div className="bg-white rounded-2xl overflow-hidden shadow-md">
+            <div className="relative overflow-hidden">
+              <img 
+                src="/images/oc/amila.jpg" 
+                alt="Prof. Amila Thibbotuwawa"
+                className="w-full h-100 object-cover grayscale transition-all duration-500 group-hover:scale-105"
+style={{ objectPosition: 'center 20%' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
             </div>
-          </div>
-
-          {/* Organizing Committee */}
-          <div className="max-w-6xl mx-auto mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Organizing Committee</h3>
-            <div className="flex justify-center gap-6">
-              {/* Member 1 - Madushan Madhava Jayalath */}
-              <div className="bg-gradient-to-br from-[#492B6F]/20 to-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-                <div className="flex flex-col items-center text-center">
-                  <h5 className="font-semibold text-gray-900 mb-2">Dr. Madhava Jayalath</h5>
-                  <p className="text-sm text-gray-600">Senior Lecturer, University of Moratuwa</p>
-                </div>
-              </div>
-
-              {/* Member 2 - W. Madushan Fernando */}
-              <div className="bg-gradient-to-br from-[#492B6F]/20 to-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-                <div className="flex flex-col items-center text-center">
-                  <h5 className="font-semibold text-gray-900 mb-2">Dr. W. Madushan Fernando</h5>
-                  <p className="text-sm text-gray-600">Senior Lecturer, University of Moratuwa</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Advisory Committee */}
-          <div className="max-w-6xl mx-auto mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Advisory Committee</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {advisoryCommittee.map((member, index) => (
-                <div key={index} className="bg-gradient-to-br from-[#492B6F]/20 to-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                  <div className="flex flex-col items-center text-center">
-                    <h5 className="font-semibold text-gray-900 mb-2">{member.name}</h5>
-                    <p className="text-sm text-gray-600 whitespace-pre-line">{member.title}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Technical Co-Sponsorship */}
-          <div className="max-w-6xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Technical Co-Sponsorship</h3>
-            <div className="">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg p-2 shadow-md flex items-center justify-center min-h-[220px]">
-                  <img src="/images/STL.png" alt="Society of Transport and Logistics" className="w-40 h-40 md:w-44 md:h-44 object-contain" />
-                </div>
-
-                <div className="bg-white rounded-lg shadow-md flex items-center justify-center min-h-[220px]">
-                  <img src="/images/ieee_tems_uom_logo.jfif" alt="IEEE TEMS" className="w-60 h-60 md:w-64 md:h-64 object-contain" />
-                </div>
-
-                <div className="bg-white rounded-lg shadow-md flex items-center justify-center min-h-[220px]">
-                  <img src="/images/scolo.png" alt="SCOLO" className="w-60 h-60 md:w-64 md:h-64 object-contain" />
-                </div>
-              </div>
+            <div className="p-6 text-center">
+              <h4 className="font-bold text-xl text-gray-900 mb-1">Prof. Amila Thibbotuwawa</h4>
+              <p className="text-gray-600">University of Moratuwa</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+
+    {/* Organizing Committee */}
+    <div className="max-w-6xl mx-auto mb-16">
+      <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Organizing Committee</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        {/* Member 1 */}
+        <div className="group">
+          <div className="bg-white rounded-2xl overflow-hidden shadow-md">
+            <div className="relative overflow-hidden">
+              <img 
+                src="/images/oc/Madushan Jayalath.jpeg" 
+                alt="Dr. Madhava Jayalath"
+                className="w-full h-100 object-cover grayscale transition-all duration-500 group-hover:scale-105"
+style={{ objectPosition: 'center 20%' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+            </div>
+            <div className="p-6 text-center">
+              <h5 className="font-semibold text-lg text-gray-900 mb-1">Dr. Madhava Jayalath</h5>
+              <p className="text-sm text-gray-600">Senior Lecturer, University of Moratuwa</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Member 2 */}
+        <div className="group">
+          <div className="bg-white rounded-2xl overflow-hidden shadow-md">
+            <div className="relative overflow-hidden">
+              <img 
+                src="/images/oc/Madushan Fernando.jpeg" 
+                alt="Dr. W. Madushan Fernando"
+                className="w-full h-100 object-cover grayscale transition-all duration-500 group-hover:scale-105"
+style={{ objectPosition: 'center 20%' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+            </div>
+            <div className="p-6 text-center">
+              <h5 className="font-semibold text-lg text-gray-900 mb-1">Dr. W. Madushan Fernando</h5>
+              <p className="text-sm text-gray-600">Senior Lecturer, University of Moratuwa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Advisory Committee */}
+    <div className="max-w-6xl mx-auto mb-16">
+      <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Advisory Committee</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {advisoryCommittee.map((member, index) => (
+          <div key={index} className="group">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-md">
+              <div className="relative overflow-hidden">
+                <img 
+                  src={member.image || `/images/advisory/member-${index + 1}.jpg`} 
+                  alt={member.name}
+                  className="w-full h-100 object-cover grayscale transition-all duration-500 group-hover:scale-105"
+style={{ objectPosition: 'center 20%' }}
+                  onError={(e) => {
+                    e.currentTarget.src = `https://via.placeholder.com/400x400/4B5563/FFFFFF?text=${member.name.split(' ').pop()}`;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+              </div>
+              <div className="p-6 text-center">
+                <h5 className="font-semibold text-lg text-gray-900 mb-2">{member.name}</h5>
+                <p className="text-sm text-gray-600 whitespace-pre-line leading-relaxed">
+                  {member.title}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Technical Co-Sponsorship */}
+    <div className="max-w-6xl mx-auto">
+      <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Technical Co-Sponsorship</h3>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="bg-white rounded-lg p-2 shadow-md flex items-center justify-center min-h-[220px]">
+          <img src="/images/STL.png" alt="Society of Transport and Logistics" className="w-40 h-40 md:w-44 md:h-44 object-contain" />
+        </div>
+
+        <div className="bg-white rounded-lg shadow-md flex items-center justify-center min-h-[220px]">
+          <img src="/images/ieee_tems_uom_logo.jfif" alt="IEEE TEMS" className="w-60 h-60 md:w-64 md:h-64 object-contain" />
+        </div>
+
+        <div className="bg-white rounded-lg shadow-md flex items-center justify-center min-h-[220px]">
+          <img src="/images/scolo.png" alt="SCOLO" className="w-60 h-60 md:w-64 md:h-64 object-contain" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
