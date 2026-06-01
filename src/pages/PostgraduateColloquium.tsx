@@ -46,7 +46,7 @@ export default function PostgraduateColloquium() {
             {/* Left Column - Description */}
             <div className="space-y-8">
               {/* Objective */}
-              <div className="bg-white/95 backdrop-blur-sm p-6 rounded-lg border-2 border-white shadow-lg hover:shadow-xl transition-all hover:scale-105">
+              <div className="bg-white/95 backdrop-blur-sm p-6 border-2 border-white shadow-lg hover:shadow-xl transition-all hover:scale-105">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Objective</h3>
                 <ul className="space-y-4 text-gray-800">
                   <li className="flex items-start">
@@ -83,7 +83,7 @@ export default function PostgraduateColloquium() {
               </div>
 
               {/* Who Should Apply */}
-              <div className="bg-white/95 backdrop-blur-sm p-6 rounded-lg border-2 border-white shadow-lg hover:shadow-xl transition-all hover:scale-105">
+              <div className="bg-white/95 backdrop-blur-sm p-6 border-2 border-white shadow-lg hover:shadow-xl transition-all hover:scale-105">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Who Should Apply</h3>
                 <ul className="space-y-4 text-gray-800">
                   <li className="flex items-start">
@@ -103,7 +103,7 @@ export default function PostgraduateColloquium() {
             {/* Right Column - Key Details */}
             <div className="space-y-8">
               {/* Key Details Card */}
-              <div className="bg-gradient-to-br from-[#492B6F] to-[#B4A5ED] p-8 rounded-lg shadow-xl text-white">
+              <div className="bg-gradient-to-br from-[#492B6F] to-[#492B6F]/90 p-8 shadow-xl text-white">
                 <h3 className="text-2xl font-bold mb-6">Key Details</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
@@ -113,7 +113,7 @@ export default function PostgraduateColloquium() {
                     </svg>
                     <div>
                       <p className="font-semibold">Location:</p>
-                      <p>Department of Transport and Logistics Engineering, University of Moratuwa</p>
+                      <p>Department of Transport Management and Logistics Engineering, University of Moratuwa</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -161,10 +161,10 @@ export default function PostgraduateColloquium() {
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#492B6F]">
+            <div className="bg-white p-6 shadow-md border-l-4 border-[#492B6F]">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#492B6F] text-white font-bold text-xl">
+                  <div className="flex items-center justify-center h-12 w-12 bg-[#492B6F] text-white font-bold text-xl">
                     1
                   </div>
                 </div>
@@ -176,10 +176,10 @@ export default function PostgraduateColloquium() {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#492B6F]">
+            <div className="bg-white p-6 shadow-md border-l-4 border-[#492B6F]">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#492B6F] text-white font-bold text-xl">
+                  <div className="flex items-center justify-center h-12 w-12 bg-[#492B6F] text-white font-bold text-xl">
                     2
                   </div>
                 </div>
@@ -191,10 +191,10 @@ export default function PostgraduateColloquium() {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#492B6F]">
+            <div className="bg-white p-6 shadow-md border-l-4 border-[#492B6F]">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#492B6F] text-white font-bold text-xl">
+                  <div className="flex items-center justify-center h-12 w-12 bg-[#492B6F] text-white font-bold text-xl">
                     3
                   </div>
                 </div>
@@ -206,10 +206,10 @@ export default function PostgraduateColloquium() {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#492B6F]">
+            <div className="bg-white p-6 shadow-md border-l-4 border-[#492B6F]">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#492B6F] text-white font-bold text-xl">
+                  <div className="flex items-center justify-center h-12 w-12 bg-[#492B6F] text-white font-bold text-xl">
                     4
                   </div>
                 </div>
@@ -286,7 +286,7 @@ export default function PostgraduateColloquium() {
             <p className="text-lg text-gray-700 mb-8">
               Submit your abstract today and join a community of emerging researchers. Get expert feedback and advance your academic career.
             </p>
-            <div className="bg-white p-8 rounded-lg shadow-xl border-2 border-[#492B6F]">
+            <div className="bg-white p-8 shadow-xl border-2 border-[#492B6F]">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Submit Your Abstract Now</h3>
               <p className="text-gray-700 mb-6">
                 Click the button below to access our submission portal
@@ -294,7 +294,7 @@ export default function PostgraduateColloquium() {
               <ExternalLink 
                 href="https://scale.uom.lk/conftool/"
                 target="_self"
-                className="inline-block bg-[#492B6F] text-white px-10 py-4 rounded-lg hover:bg-[#B4A5ED] transition-colors font-semibold text-lg shadow-lg"
+                className="inline-block bg-[#492B6F] text-white px-10 py-4 hover:bg-[#492B6F]/90 transition-colors font-semibold text-lg shadow-lg"
               >
                 Submit Abstract
               </ExternalLink>

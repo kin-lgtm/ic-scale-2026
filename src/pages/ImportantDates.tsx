@@ -35,7 +35,7 @@ export default function ImportantDates() {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Paper Submission</h3>
                 <p className="text-gray-600 mb-4">Full Research Papers</p>
-                <div className="bg-white p-4 rounded-lg border border-[#492B6F]">
+                <div className="bg-white p-4 border border-[#492B6F]">
                   <p className="text-3xl font-bold text-[#492B6F]">June 30</p>
                   <p className="text-gray-600">2026</p>
                 </div>
@@ -54,7 +54,7 @@ export default function ImportantDates() {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Abstract Submission</h3>
                 <p className="text-gray-600 mb-4">Extended Abstracts</p>
-                <div className="bg-white p-4 rounded-lg border border-[#492B6F]">
+                <div className="bg-white p-4 border border-[#492B6F]">
                   <p className="text-3xl font-bold text-[#492B6F]">June 30</p>
                   <p className="text-gray-600">2026</p>
                 </div>
@@ -73,7 +73,7 @@ export default function ImportantDates() {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Acceptance Notice</h3>
                 <p className="text-gray-600 mb-4">Review Results</p>
-                <div className="bg-white p-4 rounded-lg border border-[#492B6F]">
+                <div className="bg-white p-4 border border-[#492B6F]">
                   <p className="text-3xl font-bold text-[#492B6F]">August 10</p>
                   <p className="text-gray-600">2026</p>
                 </div>
@@ -92,7 +92,7 @@ export default function ImportantDates() {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Camera-Ready</h3>
                 <p className="text-gray-600 mb-4">Final Paper Submission</p>
-                <div className="bg-white p-4 rounded-lg border border-[#492B6F]">
+                <div className="bg-white p-4 border border-[#492B6F]">
                   <p className="text-3xl font-bold text-[#492B6F]">August 30</p>
                   <p className="text-gray-600">2026</p>
                 </div>
@@ -111,7 +111,7 @@ export default function ImportantDates() {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Registration Opens</h3>
                 <p className="text-gray-600 mb-4">Early Bird Rates</p>
-                <div className="bg-white p-4 rounded-lg border border-[#492B6F]">
+                <div className="bg-white p-4 border border-[#492B6F]">
                   <p className="text-3xl font-bold text-[#492B6F]">September 1</p>
                   <p className="text-gray-600">2026</p>
                 </div>
@@ -119,7 +119,7 @@ export default function ImportantDates() {
             </div>
 
             {/* Conference - Highlighted */}
-            <div className="bg-gradient-to-br from-[#492B6F] to-[#B4A5ED] p-8 rounded-xl shadow-2xl border-2 border-[#492B6F] hover:shadow-3xl transition-all hover:scale-105">
+            <div className="bg-gradient-to-br from-[#492B6F] to-[#492B6F]/90 p-8 rounded-xl shadow-2xl border-2 border-[#492B6F] hover:shadow-3xl transition-all hover:scale-105">
               <div className="flex items-center justify-center mb-6">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center">
                   <svg className="w-10 h-10 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -130,7 +130,7 @@ export default function ImportantDates() {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-white mb-2">Conference Dates</h3>
                 <p className="text-white/90 mb-4">Main Event</p>
-                <div className="bg-white p-4 rounded-lg">
+                <div className="bg-white p-4">
                   <p className="text-3xl font-bold text-[#492B6F]">November 26-27</p>
                   <p className="text-gray-600">2026</p>
                 </div>

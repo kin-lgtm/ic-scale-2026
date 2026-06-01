@@ -54,19 +54,19 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 to="/call-for-papers" 
-                className="bg-[#492B6F] text-white px-8 py-4 rounded-lg hover:bg-[#B4A5ED] transition-all transform hover:scale-105 font-semibold text-lg shadow-lg"
+                className="bg-[#492B6F] text-white px-8 py-4 hover:bg-[#492B6F]/90 transition-all transform hover:scale-105 font-semibold text-lg shadow-lg"
               >
                 Call for Papers
               </Link>
               <Link 
                 to="/important-dates" 
-                className="bg-gray-800 text-white px-8 py-4 rounded-lg hover:bg-gray-700 transition-all transform hover:scale-105 font-semibold text-lg shadow-lg"
+                className="bg-gray-800 text-white px-8 py-4 hover:bg-gray-700 transition-all transform hover:scale-105 font-semibold text-lg shadow-lg"
               >
                 Important Dates
               </Link>
               <Link 
                 to="/registration" 
-                className="border-2 border-[#492B6F] text-[#492B6F] px-8 py-4 rounded-lg hover:bg-[#492B6F] hover:text-white transition-all transform hover:scale-105 font-semibold text-lg"
+                className="border-2 border-[#492B6F] text-[#492B6F] px-8 py-4 hover:bg-[#492B6F] hover:text-white transition-all transform hover:scale-105 font-semibold text-lg"
               >
                 Registration
               </Link>
@@ -90,7 +90,7 @@ export default function Home() {
             </p>
             <Link 
               to="/about" 
-              className="inline-block bg-[#492B6F] text-white px-8 py-3 rounded-lg hover:bg-[#B4A5ED] transition-colors font-semibold"
+              className="inline-block bg-[#492B6F] text-white px-8 py-3 hover:bg-[#492B6F]/90 transition-colors font-semibold"
             >
               Read More
             </Link>
@@ -102,7 +102,7 @@ export default function Home() {
       <section ref={section2.elementRef} className={`py-16 animate-on-scroll ${section2.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-white rounded-lg shadow-md border-2 border-[#492B6F]">
+            <div className="text-center p-6 bg-white shadow-md border-2 border-[#492B6F]">
               <div className="w-16 h-16 bg-[#492B6F]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -112,7 +112,7 @@ export default function Home() {
               <p className="text-gray-600">Submit Extended Abstracts or full research papers across 8 specialized tracks</p>
             </div>
 
-            <div className="text-center p-6 bg-white rounded-lg shadow-md border-2 border-[#492B6F]">
+            <div className="text-center p-6 bg-white shadow-md border-2 border-[#492B6F]">
               <div className="w-16 h-16 bg-[#492B6F]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -122,7 +122,7 @@ export default function Home() {
               <p className="text-gray-600">Conference proceedings with ISBN and selected papers for Prestigious-edited book volume</p>
             </div>
 
-            <div className="text-center p-6 bg-white rounded-lg shadow-md border-2 border-[#492B6F]">
+            <div className="text-center p-6 bg-white shadow-md border-2 border-[#492B6F]">
               <div className="w-16 h-16 bg-[#492B6F]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -154,7 +154,7 @@ export default function Home() {
               <div className="text-4xl md:text-5xl font-bold text-[#492B6F] animate-pulse">
                 Coming Soon
               </div>
-              <div className="absolute -inset-2 bg-[#492B6F]/10 rounded-lg blur-xl animate-pulse"></div>
+              <div className="absolute -inset-2 bg-[#492B6F]/10 blur-xl animate-pulse"></div>
             </div>
             <p className="mt-6 text-gray-600 text-lg">
               We're excited to announce our sponsors soon!

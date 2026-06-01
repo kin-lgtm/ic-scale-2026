@@ -107,10 +107,10 @@ export default function CallForPapers() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {tracks.map((track) => (
-              <div key={track.number} className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
+              <div key={track.number} className="bg-white border border-gray-200 shadow-md hover:shadow-lg transition-shadow p-6">
                 <div className="flex items-start mb-4">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#492B6F] text-white font-bold text-xl">
+                    <div className="flex items-center justify-center h-12 w-12 bg-[#492B6F] text-white font-bold text-xl">
                       {track.number}
                     </div>
                   </div>
@@ -202,7 +202,7 @@ export default function CallForPapers() {
 
             {/* Submission Categories */}
             <div className="space-y-8 mb-12">
-              <div className="bg-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
+              <div className="bg-white p-8 border-2 border-[#492B6F] shadow-md">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Extended Abstracts</h3>
                 <div className="space-y-3 text-gray-700">
                   <p><strong>Length:</strong> 3-4 pages</p>
@@ -211,7 +211,7 @@ export default function CallForPapers() {
                 </div>
               </div>
 
-              <div className="bg-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
+              <div className="bg-white p-8 border-2 border-[#492B6F] shadow-md">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">2. Full Research Papers</h3>
                 <div className="space-y-3 text-gray-700">
                   <p><strong>Length:</strong> 12–15 pages (As per the Conference Guidelines)</p>
@@ -223,7 +223,7 @@ export default function CallForPapers() {
             </div>
 
             {/* Peer Review Policy */}
-            <div className="bg-white p-8 rounded-lg border-2 border-gray-200 shadow-md mb-12">
+            <div className="bg-white p-8 border-2 border-gray-200 shadow-md mb-12">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Peer Review Policy</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
@@ -268,10 +268,10 @@ export default function CallForPapers() {
 
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Extended Abstracts */}
-            <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
+            <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 border-2 border-[#492B6F] shadow-md">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-[#492B6F] rounded-lg flex items-center justify-center">
+                  <div className="w-16 h-16 bg-[#492B6F] flex items-center justify-center">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
@@ -287,10 +287,10 @@ export default function CallForPapers() {
             </div>
 
             {/* Conference Proceedings as Springer Book Chapter Series */}
-            <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
+            <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 border-2 border-[#492B6F] shadow-md">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-[#492B6F] rounded-lg flex items-center justify-center">
+                  <div className="w-16 h-16 bg-[#492B6F] flex items-center justify-center">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                     </svg>
@@ -306,20 +306,20 @@ export default function CallForPapers() {
             </div>
 
             {/* Indexing Status */}
-            <div className="bg-white p-8 rounded-lg shadow-md border-2 border-gray-200">
+            <div className="bg-white p-8 shadow-md border-2 border-gray-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Indexing Status</h3>
               <p className="text-gray-700 leading-relaxed text-center text-lg">
                 We are committed to maintaining high academic standards and pursuing recognition from major indexing databases, including Scopus.
               </p>
             </div>
             {/* Call to Action */}
-            <div className="text-center bg-gradient-to-r from-[#492B6F]/10 to-white p-8 rounded-lg border-2 border-[#492B6F]">
+            <div className="text-center bg-gradient-to-r from-[#492B6F]/10 to-white p-8 border-2 border-[#492B6F]">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Submit?</h3>
               <p className="text-gray-700 mb-6">Submit your paper through our conference management system</p>
               <ExternalLink 
                 href="https://scale.uom.lk/conftool/"
                 target="_self"
-                className="inline-block bg-[#492B6F] text-white px-8 py-3 rounded-lg hover:bg-[#B4A5ED] transition-colors font-semibold"
+                className="inline-block bg-[#492B6F] text-white px-8 py-3 hover:bg-[#492B6F]/90 transition-colors font-semibold"
               >
                 Submit Paper
               </ExternalLink>

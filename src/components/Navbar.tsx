@@ -91,10 +91,10 @@ export default function Navbar() {
             </Link>
             <Link 
               to="/registration" 
-              className={`px-6 py-2 rounded-lg transition-colors font-medium ${
+              className={`px-6 py-2 transition-colors font-medium ${
                 location.pathname === '/registration'
-                  ? 'bg-[#B4A5ED] text-white'
-                  : 'bg-[#492B6F] text-white hover:bg-[#B4A5ED]'
+                  ? 'bg-[#492B6F]/90 text-white'
+                  : 'bg-[#492B6F] text-white hover:bg-[#492B6F]/90'
               }`}
             >
               Register
@@ -203,10 +203,10 @@ export default function Navbar() {
             <Link 
               to="/registration" 
               onClick={closeMenu}
-              className={`block mx-3 mt-2 px-3 py-2 text-center rounded-lg font-medium ${
+              className={`block mx-3 mt-2 px-3 py-2 text-center font-medium ${
                 location.pathname === '/registration'
-                  ? 'bg-[#B4A5ED] text-white'
-                  : 'bg-[#492B6F] text-white hover:bg-[#B4A5ED]'
+                  ? 'bg-[#492B6F]/90 text-white'
+                  : 'bg-[#492B6F] text-white hover:bg-[#492B6F]/90'
               }`}
             >
               Register

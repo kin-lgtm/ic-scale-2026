@@ -105,11 +105,8 @@ export default function Program() {
               <div className="text-4xl md:text-5xl font-bold text-[#492B6F] animate-pulse">
                 Coming Soon
               </div>
-              <div className="absolute -inset-2 bg-[#492B6F]/10 rounded-lg blur-xl animate-pulse"></div>
+              <div className="absolute -inset-2 bg-[#492B6F]/10 blur-xl animate-pulse"></div>
             </div>
-            <p className="mt-6 text-gray-600 text-lg">
-              We're excited to announce our sponsors soon!
-            </p>
             <div className="flex gap-2 mt-6">
               <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
               <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
@@ -127,7 +124,7 @@ export default function Program() {
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Proposed Keynote Themes</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
+              <div className="bg-white p-8 border-2 border-[#492B6F] shadow-md">
                 <div className="w-16 h-16 bg-[#492B6F] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -139,7 +136,7 @@ export default function Program() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
+              <div className="bg-white p-8 border-2 border-[#492B6F] shadow-md">
                 <div className="w-16 h-16 bg-[#492B6F] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -151,7 +148,7 @@ export default function Program() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-lg border-2 border-[#492B6F] shadow-md">
+              <div className="bg-white p-8 border-2 border-[#492B6F] shadow-md">
                 <div className="w-16 h-16 bg-[#492B6F] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />

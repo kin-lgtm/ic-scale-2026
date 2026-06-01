@@ -26,7 +26,7 @@ export default function Registration() {
 
             {/* Registration Categories */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white border-2 border-gray-200 rounded-lg p-8 hover:border-[#492B6F] hover:shadow-lg transition-all">
+              <div className="bg-white border-2 border-gray-200 p-8 hover:border-[#492B6F] hover:shadow-lg transition-all">
                 <div className="text-center">
                   <div className="w-20 h-20 bg-[#492B6F]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-10 h-10 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,7 +39,7 @@ export default function Registration() {
                 </div>
               </div>
 
-              <div className="bg-white border-2 border-[#492B6F] rounded-lg p-8 shadow-lg relative">
+              <div className="bg-white border-2 border-[#492B6F] p-8 shadow-lg relative">
                 <div className="absolute top-0 right-0 bg-[#492B6F] text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm font-semibold">
                   Discounted
                 </div>
@@ -55,7 +55,7 @@ export default function Registration() {
                 </div>
               </div>
 
-              <div className="bg-white border-2 border-gray-200 rounded-lg p-8 hover:border-[#492B6F] hover:shadow-lg transition-all">
+              <div className="bg-white border-2 border-gray-200 p-8 hover:border-[#492B6F] hover:shadow-lg transition-all">
                 <div className="text-center">
                   <div className="w-20 h-20 bg-[#492B6F]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-10 h-10 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +70,7 @@ export default function Registration() {
             </div>
 
             {/* What's Included */}
-            <div className="bg-gray-50 p-8 rounded-lg mb-12">
+            <div className="bg-gray-50 p-8 mb-12">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Registration Includes</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-start">
@@ -113,7 +113,7 @@ export default function Registration() {
             </div>
 
             {/* Call to Action */}
-            <div className="text-center bg-gradient-to-r from-[#492B6F]/10 to-white p-10 rounded-lg border-2 border-[#492B6F]/30">
+            <div className="text-center bg-gradient-to-r from-[#492B6F]/10 to-white p-10 border-2 border-[#492B6F]/30">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Register?</h3>
               <p className="text-gray-700 mb-6">
                 Click the button below to complete your registration through our conference management system.
@@ -121,7 +121,7 @@ export default function Registration() {
               <ExternalLink 
                 href="https://scale.uom.lk/conftool/"
                 target="_self"
-                className="inline-block bg-[#492B6F] text-white px-10 py-4 rounded-lg hover:bg-[#B4A5ED] transition-colors font-semibold text-lg shadow-lg"
+                className="inline-block bg-[#492B6F] text-white px-10 py-4 hover:bg-[#492B6F]/90 transition-colors font-semibold text-lg shadow-lg"
               >
                 Register Now
               </ExternalLink>
