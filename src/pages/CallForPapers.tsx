@@ -156,11 +156,11 @@ export default function CallForPapers() {
                 <tbody className="divide-y divide-gray-200">
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Full Paper Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">June 30, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">July 15, 2026</td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Extended Abstract Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">June 30, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">July 15, 2026</td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance</td>
@@ -202,21 +202,34 @@ export default function CallForPapers() {
 
             {/* Submission Categories */}
             <div className="space-y-8 mb-12">
-              <div className="bg-white p-8 border-2 border-[#492B6F] shadow-md">
+              <div className="relative bg-white p-8 border-2 border-[#492B6F] shadow-md">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Extended Abstracts</h3>
+                
+                <a href="/templates/Extended_Abstract_Template_SCaLE_2026.docx" download className="absolute top-4 right-4 flex items-center gap-2 bg-[#492B6F] text-white text-md font-medium px-4 py-3 hover:bg-[#3a2158] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Download Template
+                </a>
                 <div className="space-y-3 text-gray-700">
-                  <p><strong>Length:</strong> 3-4 pages</p>
+                  <p><strong>Length:</strong> 3 pages</p>
                   <p><strong>Suitable for:</strong> Early-stage research, industry case studies, and conceptual frameworks</p>
                   <p><strong>Presentation and publication:</strong> Accepted Extended Abstracts will be published in the conference proceedings after acceptance (subject to review)</p>
                 </div>
               </div>
 
-              <div className="bg-white p-8 border-2 border-[#492B6F] shadow-md">
+              <div className="relative bg-white p-8 border-2 border-[#492B6F] shadow-md">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">2. Full Research Papers</h3>
+                <a href="/templates/Full_Paper_Template_ScaLE_2026.docx" download className="absolute top-4 right-4 flex items-center gap-2 bg-[#492B6F] text-white text-md font-medium px-4 py-3 hover:bg-[#3a2158] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Download Template
+                </a>
                 <div className="space-y-3 text-gray-700">
-                  <p><strong>Length:</strong> 12–15 pages (As per the Conference Guidelines)</p>
+                  <p><strong>Length:</strong> 12–15 pages</p>
                   <p><strong>Suitable for:</strong> Completed research with strong methodological rigor</p>
-                  <p><strong>Publication:</strong> Accepted papers will be published in the Prestigious-edited book volume (subject to review)</p>
+                  <p><strong>Publication:</strong> Accepted papers will be published as a book chapter</p>
                   <p><strong>Presentation:</strong> Accepted papers will be presented at the conference</p>
                 </div>
               </div>
@@ -247,7 +260,7 @@ export default function CallForPapers() {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <p className="text-gray-700">Full papers are reviewed by at least two independent reviewers</p>
+                    <p className="text-gray-700">Full papers are reviewed by two to three independent reviewers</p>
                   </div>
                 </div>
               </div>
@@ -278,9 +291,9 @@ export default function CallForPapers() {
                   </div>
                 </div>
                 <div className="ml-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Abstracts</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Extended Abstracts</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Accepted Extended Abstracts will be published in a conference proceedings with ISBN after acceptance. This publication provides a platform for early-stage research, industry case studies, and conceptual frameworks.
+                    Accepted Extended Abstracts will be published in a conference proceedings with ISSN after acceptance. This publication provides a platform for early-stage research, industry case studies, and conceptual frameworks.
                   </p>
                 </div>
               </div>
@@ -297,9 +310,9 @@ export default function CallForPapers() {
                   </div>
                 </div>
                 <div className="ml-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Conference Proceedings as Prestigious Book Chapter Series</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Conference Proceedings as a Book Chapter</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Accepted full papers will be published as chapters in a <strong>Prestigious-edited book volume</strong>. These proceedings will feature completed research papers with strong methodological rigour and significant contributions to the field.
+                    Accepted full papers will be published as a book chapter. These proceedings will feature completed research papers with strong methodological rigour and significant contributions to the field.
                   </p>
                 </div>
               </div>

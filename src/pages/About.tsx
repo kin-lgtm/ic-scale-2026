@@ -283,7 +283,7 @@ style={{ objectPosition: 'center 20%' }}
           <div className="bg-white overflow-hidden shadow-md">
             <div className="relative overflow-hidden">
               <img 
-                src="/images/oc/madushan.jpeg" 
+                src="/images/oc/madushanfernando.jpeg" 
                 alt="Dr. W. Madushan Fernando"
                 className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
 style={{ objectPosition: 'center 20%' }}

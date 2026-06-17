@@ -36,7 +36,7 @@ export default function ImportantDates() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Paper Submission</h3>
                 <p className="text-gray-600 mb-4">Full Research Papers</p>
                 <div className="bg-white p-4 border border-[#492B6F]">
-                  <p className="text-3xl font-bold text-[#492B6F]">June 30</p>
+                  <p className="text-3xl font-bold text-[#492B6F]">July 15</p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>
@@ -55,7 +55,7 @@ export default function ImportantDates() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Abstract Submission</h3>
                 <p className="text-gray-600 mb-4">Extended Abstracts</p>
                 <div className="bg-white p-4 border border-[#492B6F]">
-                  <p className="text-3xl font-bold text-[#492B6F]">June 30</p>
+                  <p className="text-3xl font-bold text-[#492B6F]">July 15</p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function ImportantDates() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Acceptance Notice</h3>
                 <p className="text-gray-600 mb-4">Review Results</p>
                 <div className="bg-white p-4 border border-[#492B6F]">
-                  <p className="text-3xl font-bold text-[#492B6F]">August 10</p>
+                  <p className="text-3xl font-bold text-[#492B6F]">August 20</p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>
@@ -150,7 +150,7 @@ export default function ImportantDates() {
             <div className="w-24 h-1 bg-[#492B6F] mx-auto"></div>
           </div>
 
-          <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
+          {/* <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-[#492B6F] text-white">
@@ -162,11 +162,11 @@ export default function ImportantDates() {
                 <tbody className="divide-y divide-gray-200">
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Full Paper Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">June 30, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">July 15, 2026</td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Extended Abstract Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">June 30, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">July 15, 2026</td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance</td>
@@ -187,7 +187,7 @@ export default function ImportantDates() {
                 </tbody>
               </table>
             </div>
-          </div>
+          </div> */}
 
           {/* Additional Info */}
           <div className="mt-12 max-w-3xl mx-auto text-center">
