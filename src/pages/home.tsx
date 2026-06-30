@@ -3,8 +3,9 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 export default function Home() {
   const section1 = useScrollAnimation();
-  const section2 = useScrollAnimation();
+  // const section2 = useScrollAnimation();
   const section3 = useScrollAnimation();
+  const sectionSpringer = useScrollAnimation();
 
   return (
     <div className="bg-white">
@@ -31,7 +32,7 @@ export default function Home() {
               Advancing Engineering Solutions for Sustainable, Resilient, and Digital Supply Chains
             </p>
             <div className="w-80 h-1 bg-[#492B6F] mx-auto mb-4"></div>
-            
+
             {/* <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
               <div className="flex items-center gap-2 text-gray-700">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -52,20 +53,20 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/call-for-papers" 
+              <Link
+                to="/call-for-papers"
                 className="bg-[#492B6F] text-white px-8 py-4 hover:bg-[#492B6F]/90 transition-all transform hover:scale-105 font-semibold text-lg shadow-lg"
               >
                 Call for Papers
               </Link>
-              <Link 
-                to="/important-dates" 
+              <Link
+                to="/important-dates"
                 className="bg-gray-800 text-white px-8 py-4 hover:bg-gray-700 transition-all transform hover:scale-105 font-semibold text-lg shadow-lg"
               >
                 Important Dates
               </Link>
-              <Link 
-                to="/registration" 
+              <Link
+                to="/registration"
                 className="border-2 border-[#492B6F] text-[#492B6F] px-8 py-4 hover:bg-[#492B6F] hover:text-white transition-all transform hover:scale-105 font-semibold text-lg"
               >
                 Registration
@@ -88,8 +89,8 @@ export default function Home() {
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               The International Conference on Supply Chain and Logistics Engineering (SCaLE 2026) is a newly established international conference hosted by the University of Moratuwa, Sri Lanka. The conference aims to promote rigorous, engineering-oriented research that addresses structural, operational, and technological challenges in modern supply chains and logistics systems.
             </p>
-            <Link 
-              to="/about" 
+            <Link
+              to="/about"
               className="inline-block bg-[#492B6F] text-white px-8 py-3 hover:bg-[#492B6F]/90 transition-colors font-semibold"
             >
               Read More
@@ -98,42 +99,93 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Springer Publication Highlight Section */}
+      <section ref={sectionSpringer.elementRef} className={`py-16 bg-[#492B6F] border-y border-gray-100 animate-on-scroll ${sectionSpringer.isVisible ? 'visible' : ''}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white p-8 md:p-12 shadow-md rounded-r-lg flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="flex-shrink-0 bg-white p-6 rounded-lg shadow-md border border-gray-100 flex items-center justify-center">
+              <img
+                src="/springer-logo.png"
+                alt="Springer Logo"
+                className="h-40 object-contain"
+              />
+            </div>
+            <div className="flex-1">
+              <span className="bg-[#492B6F] text-white text-xs font-bold uppercase tracking-wider px-3 py-1 mb-3 inline-block">
+                Prestigious Publication Partner
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Springer Lecture Notes in Logistics
+              </h2>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                We are proud to highlight that accepted and presented full research papers at SCaLE 2026 will be published by <span className="font-semibold text-[#492B6F]">Springer</span> as part of the prestigious <span className="font-semibold text-[#492B6F]">"Lecture Notes in Logistics (LNL)"</span>.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                This partnership reflects the rigorous academic standards of the conference. Volumes published in this series are indexed by major citation databases, including <span className="font-semibold text-gray-900">Scopus</span>, ensuring excellent visibility for your research.
+              </p>
+              <div className="flex flex-wrap items-center gap-4">
+                <div className="flex items-center gap-2 bg-white px-4 py-2 border border-gray-200 shadow-sm text-sm font-medium text-gray-800">
+                  <span className="w-2.5 h-2.5 bg-green-500"></span>
+                  Scopus Indexed
+                </div>
+                <div className="flex items-center gap-2 bg-white px-4 py-2 border border-gray-200 shadow-sm text-sm font-medium text-gray-800">
+                  <span className="w-2.5 h-2.5 bg-[#492B6F]"></span>
+                  Peer Reviewed
+                </div>
+                <Link
+                  to="/call-for-papers"
+                  className="bg-[#492B6F] text-white px-4 py-2 font-bold inline-flex items-center gap-1 text-sm ml-auto md:ml-0"
+                >
+                  View Submission Guidelines
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Conference Highlights */}
-      <section ref={section2.elementRef} className={`py-16 animate-on-scroll ${section2.isVisible ? 'visible' : ''}`}>
+      {/* <section ref={section2.elementRef} className={`py-16 animate-on-scroll ${section2.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-white shadow-md border-2 border-[#492B6F]">
-              <div className="w-16 h-16 bg-[#492B6F]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
+            <div className="text-center p-6 bg-white shadow-md border-2 border-[#492B6F] flex flex-col hover:shadow-lg transition-all duration-300 h-full">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#492B6F]/10 shadow-sm flex-shrink-0">
+                <img
+                  src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=200&q=80"
+                  alt="Research Papers"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Research Papers</h3>
               <p className="text-gray-600">Submit Extended Abstracts or full research papers across 8 specialized tracks</p>
             </div>
 
-            <div className="text-center p-6 bg-white shadow-md border-2 border-[#492B6F]">
-              <div className="w-16 h-16 bg-[#492B6F]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
+            <div className="text-center p-6 bg-white shadow-md border-2 border-[#492B6F] flex flex-col hover:shadow-lg transition-all duration-300 h-full">
+              <div className="h-20 flex items-center justify-center mx-auto mb-4 flex-shrink-0">
+                <img
+                  src="/springer-logo.png"
+                  alt="Springer Logo"
+                  className="h-30 object-contain"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Publication</h3>
-              <p className="text-gray-600">Conference proceedings with ISBN and selected papers for Prestigious-edited book volume</p>
+              <p className="text-gray-600">Extended Abstracts will be published with an ISSN and selected Full Papers will be published in Springer's <span className="font-semibold text-[#492B6F]">"Lecture Notes in Logistics"</span> book chapter series.</p>
             </div>
 
-            <div className="text-center p-6 bg-white shadow-md border-2 border-[#492B6F]">
-              <div className="w-16 h-16 bg-[#492B6F]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#492B6F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
+            <div className="text-center p-6 bg-white shadow-md border-2 border-[#492B6F] flex flex-col hover:shadow-lg transition-all duration-300 h-full">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#492B6F]/10 shadow-sm flex-shrink-0">
+                <img
+                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=200&q=80"
+                  alt="International Forum"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">International Forum</h3>
               <p className="text-gray-600">Connect with global researchers, industry leaders, and policymakers</p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Sponsors Section */}
       <section ref={section3.elementRef} className={`py-16 bg-gray-50 animate-on-scroll ${section3.isVisible ? 'visible' : ''}`}>
@@ -168,32 +220,32 @@ export default function Home() {
 
           {/* Commented out sponsors - will be activated later */}
           {/* <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16"> */}
-            {/* Gold Partner */}
-            {/* <div className="text-center">
+          {/* Gold Partner */}
+          {/* <div className="text-center">
               <img src="/images/One-JKH.png" alt="John Keells Holdings" className="h-32 w-auto mx-auto mb-3 object-contain" />
               <div className="text-yellow-600 text-sm font-semibold">
                 Gold Partner
               </div>
             </div> */}
 
-            {/* Silver Partner 1 */}
-            {/* <div className="text-center">
+          {/* Silver Partner 1 */}
+          {/* <div className="text-center">
               <img src="/images/MAS.jpeg" alt="MAS Holdings" className="h-32 w-auto mx-auto mb-3 object-contain" />
               <div className="text-gray-500 text-xs font-semibold">
                 Silver Partner
               </div>
             </div> */}
 
-            {/* Silver Partner 2 */}
-            {/* <div className="text-center">
+          {/* Silver Partner 2 */}
+          {/* <div className="text-center">
               <img src="/images/Haleys.png" alt="Hayleys Group" className="h-32 w-auto mx-auto mb-3 object-contain" />
               <div className="text-gray-500 text-xs font-semibold">
                 Silver Partner
               </div>
             </div> */}
 
-            {/* Bronze Partner */}
-            {/* <div className="text-center">
+          {/* Bronze Partner */}
+          {/* <div className="text-center">
               <div className="h-32 flex items-center justify-center mb-3">
                 <div className="text-xl font-bold text-gray-700">Brandix Lanka Limited</div>
               </div>

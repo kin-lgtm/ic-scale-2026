@@ -100,7 +100,7 @@ export default function CallForPapers() {
         </div>
       </section>
 
-      
+
 
       {/* Tracks Section */}
       <section ref={section1.elementRef} className={`py-16 animate-on-scroll ${section1.isVisible ? 'visible' : ''}`}>
@@ -184,7 +184,7 @@ export default function CallForPapers() {
           </div>
         </div>
       </section>
-      
+
       {/* Call for Papers Section */}
       <section ref={section2.elementRef} className={`py-16 bg-gray-50 animate-on-scroll ${section2.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -202,15 +202,20 @@ export default function CallForPapers() {
 
             {/* Submission Categories */}
             <div className="space-y-8 mb-12">
-              <div className="relative bg-white p-8 border-2 border-[#492B6F] shadow-md">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">1. Extended Abstracts</h3>
-                
-                <a href="/templates/Extended_Abstract_Template_SCaLE_2026.docx" download className="absolute top-4 right-4 flex items-center gap-2 bg-[#492B6F] text-white text-md font-medium px-4 py-3 hover:bg-[#3a2158] transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                  </svg>
-                  Download Template
-                </a>
+              <div className="bg-white p-8 border-2 border-[#492B6F] shadow-md">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-gray-100">
+                  <h3 className="text-2xl font-bold text-gray-900">1. Extended Abstracts</h3>
+                  <a
+                    href="/templates/Extended_Abstract_Template_SCaLE_2026.docx"
+                    download
+                    className="flex items-center gap-2 bg-[#492B6F] text-white text-sm font-semibold px-4 py-2.5 hover:bg-[#3a2158] transition-colors shadow-sm"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Download Template
+                  </a>
+                </div>
                 <div className="space-y-3 text-gray-700">
                   <p><strong>Length:</strong> 3 pages</p>
                   <p><strong>Suitable for:</strong> Early-stage research, industry case studies, and conceptual frameworks</p>
@@ -218,18 +223,43 @@ export default function CallForPapers() {
                 </div>
               </div>
 
-              <div className="relative bg-white p-8 border-2 border-[#492B6F] shadow-md">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">2. Full Research Papers</h3>
-                <a href="/templates/Full_Paper_Template_ScaLE_2026.docx" download className="absolute top-4 right-4 flex items-center gap-2 bg-[#492B6F] text-white text-md font-medium px-4 py-3 hover:bg-[#3a2158] transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                  </svg>
-                  Download Template
-                </a>
+              <div className="bg-white p-8 border-2 border-[#492B6F] shadow-md">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 border-gray-100">
+                  <h3 className="text-2xl font-bold text-gray-900">2. Full Research Papers</h3>
+                  <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <ExternalLink
+                      href="https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27841328/data/v1"
+                      className="flex items-center justify-center gap-2 bg-[#492B6F] text-white text-sm font-semibold px-4 py-2.5 hover:bg-[#3a2158] transition-colors shadow-sm"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                      Download Template
+                    </ExternalLink>
+                    <ExternalLink
+                      href="https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/26362278/data/v2"
+                      className="flex items-center justify-center gap-2 border border-[#492B6F] text-[#492B6F] text-sm font-semibold px-4 py-2.5 hover:bg-[#492B6F]/5 transition-colors shadow-sm"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                      Full Paper Instructions
+                    </ExternalLink>
+                  </div>
+                </div>
                 <div className="space-y-3 text-gray-700">
                   <p><strong>Length:</strong> 12–15 pages</p>
-                  <p><strong>Suitable for:</strong> Completed research with strong methodological rigor</p>
-                  <p><strong>Publication:</strong> Accepted papers will be published as a book chapter</p>
+                  <p><strong>Suitable for:</strong> Completed research with strong methodological rigor and significant contributions to the field</p>
+                  <p>
+                    <strong>Publication:</strong> Accepted papers will be published as part of the Book Chapter Series of{' '}
+                    <ExternalLink
+                      href="https://link.springer.com/series/11220"
+                      className="text-[#492B6F] hover:underline font-semibold"
+                    >
+                      Lecture Notes in Logistics
+                    </ExternalLink>{' '}
+                    by Springer.
+                  </p>
                   <p><strong>Presentation:</strong> Accepted papers will be presented at the conference</p>
                 </div>
               </div>
@@ -301,19 +331,31 @@ export default function CallForPapers() {
 
             {/* Conference Proceedings as Springer Book Chapter Series */}
             <div className="bg-gradient-to-r from-[#492B6F]/10 to-white p-8 border-2 border-[#492B6F] shadow-md">
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-[#492B6F] flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                    </svg>
+              <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+                <div className="flex items-start flex-1">
+                  <div className="flex-shrink-0 hidden sm:block">
+                    <div className="w-16 h-16 bg-[#492B6F] flex items-center justify-center">
+                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="sm:ml-6">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center sm:text-left">Conference Proceedings as a Book Chapter</h3>
+                    <p className="text-gray-700 leading-relaxed text-center sm:text-left">
+                      The conference proceedings are published by Springer as part of the{' '}
+                      <ExternalLink
+                        href="https://link.springer.com/series/11220"
+                        className="text-[#492B6F] hover:underline font-semibold"
+                      >
+                        "Lecture Notes in Logistics (LNL)"
+                      </ExternalLink>{' '}
+                      Book Series. These proceedings will feature completed research papers with strong methodological rigour and significant contributions to the field.
+                    </p>
                   </div>
                 </div>
-                <div className="ml-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Conference Proceedings as a Book Chapter</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Accepted full papers will be published as a book chapter. These proceedings will feature completed research papers with strong methodological rigour and significant contributions to the field.
-                  </p>
+                <div className="flex-shrink-0 bg-white p-4 border border-gray-200 shadow-sm rounded-lg flex items-center justify-center w-full md:w-auto">
+                  <img src="/springer-logo.png" alt="Springer Logo" className="h-20 object-contain mx-auto" />
                 </div>
               </div>
             </div>
@@ -322,14 +364,14 @@ export default function CallForPapers() {
             <div className="bg-white p-8 shadow-md border-2 border-gray-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Indexing Status</h3>
               <p className="text-gray-700 leading-relaxed text-center text-lg">
-                We are committed to maintaining high academic standards and pursuing recognition from major indexing databases, including Scopus.
+                Volumes published as part of this series are made available through multiple indexing services, including Scopus.
               </p>
             </div>
             {/* Call to Action */}
             <div className="text-center bg-gradient-to-r from-[#492B6F]/10 to-white p-8 border-2 border-[#492B6F]">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Submit?</h3>
               <p className="text-gray-700 mb-6">Submit your paper through our conference management system</p>
-              <ExternalLink 
+              <ExternalLink
                 href="https://scale.uom.lk/conftool/"
                 target="_self"
                 className="inline-block bg-[#492B6F] text-white px-8 py-3 hover:bg-[#492B6F]/90 transition-colors font-semibold"

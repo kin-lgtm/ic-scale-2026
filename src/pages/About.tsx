@@ -6,59 +6,59 @@ export default function About() {
   const section3 = useScrollAnimation();
 
   const advisoryCommittee = [
-  { 
-    name: "Prof. H.N. Perera", 
-    title: "Head, Department of Transport Management and Logistic Engineering",
-    image: "/images/oc/niles.jpg"
-  },
-  { 
-    name: "Prof. Amal S. Kumarage", 
-    title: "Emeritus Professor\nUniversity of Moratuwa",
-    image: "/images/oc/ac/amal.jpg"
-  },
-  { 
-    name: "Prof. A.A.D.A.J. Perera", 
-    title: "Emeritus Professor\nUniversity of Moratuwa",
-    image: "/images/oc/ac/asoka.jpg"
-  },
-  { 
-    name: "Prof. P.T.R.S. Sugathadasa", 
-    title: "Professor, University of Moratuwa",
-    image: "/images/oc/ac/Sugathadasa.jpg"
-  },
-  { 
-    name: "Eng. (Dr.) T. Sivakumar", 
-    title: "Senior Lecturer, University of Moratuwa",
-    image: "/images/oc/ac/sivakumar.jpg"
-  },
-  { 
-    name: "Dr. L.C.I. Sigera", 
-    title: "Senior Lecturer, University of Moratuwa",
-    image: "/images/oc/ac/sigera.jpg"
-  },
-  { 
-    name: "Dr. W.W.A.S. Fernando", 
-    title: "Senior Lecturer, University of Moratuwa",
-    image: "/images/oc/ac/fernando.jpg"
-  },
-  { 
-    name: "Mrs. G.M.B.P. Abeysekara", 
-    title: "Senior Lecturer, University of Moratuwa",
-    image: "/images/oc/ac/abeysekara.jpg"
-  },
-  { 
-    name: "Dr. B.D. Hettiarachchi", 
-    title: "Senior Lecturer, University of Moratuwa",
-    image: "/images/oc/ac/biman.jpg"
-  },
-  { 
-    name: "Dr. J.I. Sudusinghe", 
-    title: "Senior Lecturer, University of Moratuwa",
-    image: "/images/oc/ac/sudusinghe.jpg"
-  }
-];
+    {
+      name: "Prof. H.N. Perera",
+      title: "Head, Department of Transport Management and Logistic Engineering",
+      image: "/images/oc/niles.jpg"
+    },
+    {
+      name: "Prof. Amal S. Kumarage",
+      title: "Emeritus Professor\nUniversity of Moratuwa",
+      image: "/images/oc/ac/amal.jpg"
+    },
+    {
+      name: "Prof. A.A.D.A.J. Perera",
+      title: "Emeritus Professor\nUniversity of Moratuwa",
+      image: "/images/oc/ac/asoka.jpg"
+    },
+    {
+      name: "Prof. P.T.R.S. Sugathadasa",
+      title: "Professor, University of Moratuwa",
+      image: "/images/oc/ac/Sugathadasa.jpg"
+    },
+    {
+      name: "Eng. (Dr.) T. Sivakumar",
+      title: "Senior Lecturer, University of Moratuwa",
+      image: "/images/oc/ac/sivakumar.jpg"
+    },
+    {
+      name: "Dr. L.C.I. Sigera",
+      title: "Senior Lecturer, University of Moratuwa",
+      image: "/images/oc/ac/sigera.jpg"
+    },
+    {
+      name: "Dr. W.W.A.S. Fernando",
+      title: "Senior Lecturer, University of Moratuwa",
+      image: "/images/oc/ac/fernando.jpg"
+    },
+    {
+      name: "Mrs. G.M.B.P. Abeysekara",
+      title: "Senior Lecturer, University of Moratuwa",
+      image: "/images/oc/ac/abeysekara.jpg"
+    },
+    {
+      name: "Dr. B.D. Hettiarachchi",
+      title: "Senior Lecturer, University of Moratuwa",
+      image: "/images/oc/ac/biman.jpg"
+    },
+    {
+      name: "Dr. J.I. Sudusinghe",
+      title: "Senior Lecturer, University of Moratuwa",
+      image: "/images/oc/ac/sudusinghe.jpg"
+    }
+  ];
 
-  
+
 
   return (
     <div className="bg-white">
@@ -78,13 +78,13 @@ export default function About() {
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
             {/* Logo */}
             <div className="flex-shrink-0 mr-24">
-              <img 
-                src="/scale-logo-dark.png" 
-                alt="SCaLE 2026 Logo" 
+              <img
+                src="/scale-logo-dark.png"
+                alt="SCaLE 2026 Logo"
                 className="w-90 h-auto"
               />
             </div>
-            
+
             {/* Text Content */}
             <div className="flex-1">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -102,9 +102,9 @@ export default function About() {
       <section ref={section2.elementRef} className={`relative py-16 animate-on-scroll ${section2.isVisible ? 'visible' : ''}`}>
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&h=1080&fit=crop" 
-            alt="Supply Chain Background" 
+          <img
+            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&h=1080&fit=crop"
+            alt="Supply Chain Background"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-[#492B6F]/90 to-white/95"></div>
@@ -212,211 +212,195 @@ export default function About() {
       </section>
 
       {/* Conference Committees */}
-<section ref={section3.elementRef} className={`py-16 animate-on-scroll ${section3.isVisible ? 'visible' : ''}`}>
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-        Conference Committees
-      </h2>
-      <div className="w-24 h-1 bg-[#492B6F] mx-auto"></div>
-    </div>
+      <section ref={section3.elementRef} className={`py-16 animate-on-scroll ${section3.isVisible ? 'visible' : ''}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Conference Committees
+            </h2>
+            <div className="w-24 h-1 bg-[#492B6F] mx-auto"></div>
+          </div>
 
-    {/* Conference Chair */}
-    <div className="max-w-6xl mx-auto mb-16">
-      <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Conference Chair</h3>
-      <div className="flex justify-center">
-        <div className="group w-full max-w-md">
-          <div className="bg-white overflow-hidden shadow-md">
-            <div className="relative overflow-hidden">
-              <img 
-                src="/images/oc/amila.jpg" 
-                alt="Prof. Amila Thibbotuwawa"
-                className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
-style={{ objectPosition: 'center 20%' }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
-            </div>
-            <div className="p-6 text-center">
-              <h4 className="font-bold text-xl text-[#492B6F] mb-1">Prof. Amila Thibbotuwawa</h4>
-              <p className="text-md text-gray-600">University of Moratuwa</p>
+          {/* Conference Chair */}
+          <div className="max-w-6xl mx-auto mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Conference Chair</h3>
+            <div className="flex justify-center">
+              <div className="group w-full max-w-md">
+                <div className="bg-white overflow-hidden shadow-md">
+                  <div className="relative overflow-hidden">
+                    <img
+                      src="/images/oc/amila.jpg"
+                      alt="Prof. Amila Thibbotuwawa"
+                      className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
+                      style={{ objectPosition: 'center 20%' }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+                  </div>
+                  <div className="p-6 text-center">
+                    <h4 className="font-bold text-xl text-[#492B6F] mb-1">Prof. Amila Thibbotuwawa</h4>
+                    <p className="text-md text-gray-600">University of Moratuwa</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    {/* Organizing Committee */}
-    <div className="w-screen mb-16 ml-[calc(-50vw+50%)]">
-      <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Organizing Committee</h3>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-5 w-full px-16 sm:px-20 lg:px-32 mx-auto">
-        {/* Member 1 */}
-        <div className="group">
-          <div className="bg-white overflow-hidden shadow-md">
-            <div className="relative overflow-hidden">
-              <img 
-                src="/images/oc/madhava.jpeg" 
-                alt="Dr. Madhava Jayalath"
-                className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
-style={{ objectPosition: 'center 20%' }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+          {/* Organizing Committee */}
+          <div className="w-screen mb-16 ml-[calc(-50vw+50%)]">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Organizing Committee</h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 w-full px-16 sm:px-20 lg:px-32 mx-auto">
+              {/* Member 1 */}
+              <div className="group h-full">
+                <div className="bg-white overflow-hidden shadow-md flex flex-col h-full">
+                  <div className="relative overflow-hidden">
+                    <img
+                      src="/images/oc/madhava.jpeg"
+                      alt="Dr. Madhava Jayalath"
+                      className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
+                      style={{ objectPosition: 'center 20%' }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+                  </div>
+                  <div className="p-6 text-center flex flex-col flex-grow">
+                    <h5 className="font-bold text-xl text-[#492B6F] mb-2">Dr. Madhava<br />Jayalath</h5>
+                    <p className="text-md text-gray-600 mb-3 flex-grow">Senior Lecturer<br />University of Moratuwa</p>
+                    <div className="flex justify-center text-sm">
+                      <a href="mailto:madhavaj@uom.lk" className="flex items-center gap-1 text-[#492B6F] hover:underline">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        madhavaj@uom.lk
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Member 2 */}
+              <div className="group h-full">
+                <div className="bg-white overflow-hidden shadow-md flex flex-col h-full">
+                  <div className="relative overflow-hidden">
+                    <img
+                      src="/images/oc/madushanfernando.jpeg"
+                      alt="Dr. W. Madushan Fernando"
+                      className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
+                      style={{ objectPosition: 'center 20%' }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+                  </div>
+                  <div className="p-6 text-center flex flex-col flex-grow">
+                    <h5 className="font-bold text-xl text-[#492B6F] mb-2">Dr. W. Madushan<br />Fernando</h5>
+                    <p className="text-md text-gray-600 mb-3 flex-grow">Senior Lecturer<br />University of Moratuwa</p>
+                    <div className="flex justify-center text-sm">
+                      <a href="mailto:madushanf@uom.lk" className="flex items-center gap-1 text-[#492B6F] hover:underline">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        madushanf@uom.lk
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Member 3 */}
+              <div className="group h-full">
+                <div className="bg-white overflow-hidden shadow-md flex flex-col h-full">
+                  <div className="relative overflow-hidden">
+                    <img
+                      src="/images/oc/ac/kasuni.jpeg"
+                      alt="Dr. Kasuni Weerasinghe"
+                      className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
+                      style={{ objectPosition: 'center 20%' }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+                  </div>
+                  <div className="p-6 text-center flex flex-col flex-grow">
+                    <h5 className="font-bold text-xl text-[#492B6F] mb-2">Dr. Kasuni<br />Weerasinghe</h5>
+                    <p className="text-md text-gray-600 mb-3 flex-grow">Lecturer<br />University of Moratuwa</p>
+                    <div className="flex justify-center text-sm">
+                      <a href="mailto:kasuniw@uom.lk" className="flex items-center gap-1 text-[#492B6F] hover:underline">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        kasuniw@uom.lk
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Member 4 */}
+              <div className="group h-full">
+                <div className="bg-white overflow-hidden shadow-md flex flex-col h-full">
+                  <div className="relative overflow-hidden">
+                    <img
+                      src="/images/oc/ac/thiranjaya.jpeg"
+                      alt="Dr. Thiranjaya Kandanaarachchi"
+                      className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
+                      style={{ objectPosition: 'center 20%' }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+                  </div>
+                  <div className="p-6 text-center flex flex-col flex-grow">
+                    <h5 className="font-bold text-xl text-[#492B6F] mb-2">Dr. Thiranjaya<br />Kandanaarachchi</h5>
+                    <p className="text-md text-gray-600 mb-3 flex-grow">Senior Lecturer<br />University of Moratuwa</p>
+                    <div className="flex justify-center text-sm">
+                      <a href="mailto:thiranjayak@uom.lk" className="flex items-center gap-1 text-[#492B6F] hover:underline">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        thiranjayak@uom.lk
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="p-6 text-center">
-              <h5 className="font-bold text-xl text-[#492B6F] mb-2">Dr. Madhava Jayalath</h5>
-              <p className="text-md text-gray-600 mb-3">Senior Lecturer, University of Moratuwa</p>
-              <div className="flex justify-center gap-4 text-sm">
-                <a href="mailto:madhavaj@uom.lk" className="flex items-center gap-1 text-[#492B6F] hover:underline">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                  madhavaj@uom.lk
-                </a>
-                <a href="tel:+94112123456" className="flex items-center gap-1 text-[#492B6F] hover:underline">
-                  <svg className="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                  Phone
-                </a>
+          </div>
+
+          {/* Advisory Committee */}
+          <div className="max-w-6xl mx-auto mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Advisory Committee</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {advisoryCommittee.map((member, index) => (
+                <div key={index} className="group">
+                  <div className="bg-white overflow-hidden shadow-md">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={member.image || `/images/advisory/member-${index + 1}.jpg`}
+                        alt={member.name}
+                        className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
+                        style={{ objectPosition: 'center 20%' }}
+                        onError={(e) => {
+                          e.currentTarget.src = `https://via.placeholder.com/400x400/4B5563/FFFFFF?text=${member.name.split(' ').pop()}`;
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+                    </div>
+                    <div className="p-6 text-center">
+                      <h5 className="font-bold text-xl text-[#492B6F] mb-2">{member.name}</h5>
+                      <p className="text-md text-gray-600 whitespace-pre-line leading-relaxed">
+                        {member.title}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Technical Co-Sponsorship */}
+          <div className="max-w-6xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Technical Co-Sponsorship</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white p-2 shadow-md flex items-center justify-center min-h-[220px]">
+                <img src="/images/STL.png" alt="Society of Transport and Logistics" className="w-40 h-40 md:w-44 md:h-44 object-contain" />
+              </div>
+
+              <div className="bg-white shadow-md flex items-center justify-center min-h-[220px]">
+                <img src="/images/ieee_tems_uom_logo.jfif" alt="IEEE TEMS" className="w-60 h-60 md:w-64 md:h-64 object-contain" />
+              </div>
+
+              <div className="bg-white shadow-md flex items-center justify-center min-h-[220px]">
+                <img src="/images/scolo.png" alt="SCOLO" className="w-60 h-60 md:w-64 md:h-64 object-contain" />
               </div>
             </div>
           </div>
         </div>
-
-        {/* Member 2 */}
-        <div className="group">
-          <div className="bg-white overflow-hidden shadow-md">
-            <div className="relative overflow-hidden">
-              <img 
-                src="/images/oc/madushanfernando.jpeg" 
-                alt="Dr. W. Madushan Fernando"
-                className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
-style={{ objectPosition: 'center 20%' }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
-            </div>
-            <div className="p-6 text-center">
-              <h5 className="font-bold text-xl text-[#492B6F] mb-2">Dr. W. Madushan Fernando</h5>
-              <p className="text-md text-gray-600 mb-3">Senior Lecturer, University of Moratuwa</p>
-              <div className="flex justify-center gap-4 text-sm">
-                <a href="mailto:madushanf@uom.lk" className="flex items-center gap-1 text-[#492B6F] hover:underline">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                  madushanf@uom.lk
-                </a>
-                <a href="tel:+94112123456" className="flex items-center gap-1 text-[#492B6F] hover:underline">
-                  <svg className="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                  Phone
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Member 3 */}
-        <div className="group">
-          <div className="bg-white overflow-hidden shadow-md">
-            <div className="relative overflow-hidden">
-              <img 
-                src="/images/oc/ac/kasuni.jpeg" 
-                alt="Dr. Kasuni Weerasinghe"
-                className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
-style={{ objectPosition: 'center 20%' }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
-            </div>
-            <div className="p-6 text-center">
-              <h5 className="font-bold text-xl text-[#492B6F] mb-2">Dr. Kasuni Weerasinghe</h5>
-              <p className="text-md text-gray-600 mb-3">Lecturer<br />University of Moratuwa<br /></p>
-              <div className="flex justify-center gap-2 text-sm">
-                <a href="mailto:kasuniw@uom.lk" className="flex items-center gap-1 text-[#492B6F] hover:underline">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                  kasuniw@uom.lk
-                </a>
-                <a href="tel:+94112123456" className="flex items-center gap-1 text-[#492B6F] hover:underline">
-                  <svg className="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                  Phone
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Member 4 */}
-        <div className="group">
-          <div className="bg-white overflow-hidden shadow-md">
-            <div className="relative overflow-hidden">
-              <img 
-                src="/images/oc/ac/thiranjaya.jpeg" 
-                alt="Dr. Thiranjaya Kandanaarachchi"
-                className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
-style={{ objectPosition: 'center 20%' }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
-            </div>
-            <div className="p-6 text-center">
-              <h5 className="font-bold text-xl text-[#492B6F] mb-2">Dr. Thiranjaya B. K</h5>
-              <p className="text-md text-gray-600 mb-3">Senior Lecturer, University of Moratuwa</p>
-              <div className="flex justify-center gap-4 text-sm">
-                <a href="mailto:thiranjayak@uom.lk" className="flex items-center gap-1 text-[#492B6F] hover:underline">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                  thiranjayak@uom.lk
-                </a>
-                <a href="tel:+94112123456" className="flex items-center gap-1 text-[#492B6F] hover:underline">
-                  <svg className="w-4 h-4" stroke="currentColor" fill="none" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                  Phone
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* Advisory Committee */}
-    <div className="max-w-6xl mx-auto mb-16">
-      <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Advisory Committee</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {advisoryCommittee.map((member, index) => (
-          <div key={index} className="group">
-            <div className="bg-white overflow-hidden shadow-md">
-              <div className="relative overflow-hidden">
-                <img 
-                  src={member.image || `/images/advisory/member-${index + 1}.jpg`} 
-                  alt={member.name}
-                  className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
-style={{ objectPosition: 'center 20%' }}
-                  onError={(e) => {
-                    e.currentTarget.src = `https://via.placeholder.com/400x400/4B5563/FFFFFF?text=${member.name.split(' ').pop()}`;
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
-              </div>
-              <div className="p-6 text-center">
-                <h5 className="font-bold text-xl text-[#492B6F] mb-2">{member.name}</h5>
-                <p className="text-md text-gray-600 whitespace-pre-line leading-relaxed">
-                  {member.title}
-                </p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    {/* Technical Co-Sponsorship */}
-    <div className="max-w-6xl mx-auto">
-      <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Technical Co-Sponsorship</h3>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-white p-2 shadow-md flex items-center justify-center min-h-[220px]">
-          <img src="/images/STL.png" alt="Society of Transport and Logistics" className="w-40 h-40 md:w-44 md:h-44 object-contain" />
-        </div>
-
-        <div className="bg-white shadow-md flex items-center justify-center min-h-[220px]">
-          <img src="/images/ieee_tems_uom_logo.jfif" alt="IEEE TEMS" className="w-60 h-60 md:w-64 md:h-64 object-contain" />
-        </div>
-
-        <div className="bg-white shadow-md flex items-center justify-center min-h-[220px]">
-          <img src="/images/scolo.png" alt="SCOLO" className="w-60 h-60 md:w-64 md:h-64 object-contain" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
     </div>
   );
 }
