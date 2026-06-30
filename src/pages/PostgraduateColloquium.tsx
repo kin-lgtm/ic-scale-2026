@@ -18,7 +18,6 @@ export default function PostgraduateColloquium() {
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
               Submit your research abstract and get mentorship from experts
             </p>
-            
           </div>
         </div>
       </section>
@@ -63,7 +62,7 @@ export default function PostgraduateColloquium() {
                     <div className="flex-shrink-0">
                       <div className="flex items-center justify-center h-10 w-10 rounded-md bg-[#492B6F] text-white">
                         <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                       </div>
                     </div>
@@ -131,7 +130,7 @@ export default function PostgraduateColloquium() {
                     </svg>
                     <div>
                       <p className="font-semibold">Application Deadline:</p>
-                      <p>July 15, 2026</p>
+                      <p>August 1, 2026</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -140,7 +139,7 @@ export default function PostgraduateColloquium() {
                     </svg>
                     <div>
                       <p className="font-semibold">Notification of Acceptance:</p>
-                      <p>August 20, 2026</p>
+                      <p>August 30, 2026</p>
                     </div>
                   </div>
                 </div>
@@ -149,80 +148,6 @@ export default function PostgraduateColloquium() {
           </div>
         </div>
       </section>
-
-      {/* Submission Guidelines Section */}
-      {/* <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Submission Guidelines
-            </h2>
-            <div className="w-24 h-1 bg-[#492B6F] mx-auto"></div>
-          </div>
-
-          <div className="max-w-4xl mx-auto space-y-6">
-            <div className="bg-white p-6 shadow-md border-l-4 border-[#492B6F]">
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 bg-[#492B6F] text-white font-bold text-xl">
-                    1
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <p className="text-gray-700">
-                    Submit a research abstract <strong>(max 500 words)</strong> including objectives, methodology, and expected outcomes
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 shadow-md border-l-4 border-[#492B6F]">
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 bg-[#492B6F] text-white font-bold text-xl">
-                    2
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <p className="text-gray-700">
-                    Extended Abstracts must be <strong>original and unpublished</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 shadow-md border-l-4 border-[#492B6F]">
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 bg-[#492B6F] text-white font-bold text-xl">
-                    3
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <p className="text-gray-700">
-                    Selected participants will be <strong>assigned a mentor</strong> from the organizing committee
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 shadow-md border-l-4 border-[#492B6F]">
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 bg-[#492B6F] text-white font-bold text-xl">
-                    4
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <p className="text-gray-700">
-                    Presentations will include <strong>interactive discussions and feedback sessions</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* Evaluation Process Section */}
       <section ref={section2.elementRef} className={`py-16 animate-on-scroll ${section2.isVisible ? 'visible' : ''}`}>
@@ -276,35 +201,68 @@ export default function PostgraduateColloquium() {
         </div>
       </section>
 
-      {/* Call to Action / Submission Section */}
+      {/* Submission Information Section */}
       <section ref={section3.elementRef} id="submission" className={`py-16 bg-gradient-to-r from-[#492B6F]/20 to-white animate-on-scroll ${section3.isVisible ? 'visible' : ''}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Ready to Present Your Research?
-            </h2>
-            <p className="text-lg text-gray-700 mb-8">
-              Submit your abstract today and join a community of emerging researchers. Get expert feedback and advance your academic career.
-            </p>
-            <div className="bg-white p-8 shadow-xl border-2 border-[#492B6F]">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Submit Your Abstract Now</h3>
-              <p className="text-gray-700 mb-6">
-                Click the button below to access our submission portal
-              </p>
-              <ExternalLink 
-                href="https://scale.uom.lk/conftool/"
-                target="_self"
-                className="inline-block bg-[#492B6F] text-white px-10 py-4 hover:bg-[#492B6F]/90 transition-colors font-semibold text-lg shadow-lg"
-              >
-                Submit Abstract
-              </ExternalLink>
-              <p className="text-sm text-gray-500 mt-4">
-                Deadline: July 15, 2026
-              </p>
-            </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-3xl mx-auto text-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Ready to Submit Your Extended Abstract?
+      </h2>
+      <p className="text-lg text-gray-700 mb-8">
+        Join a community of emerging researchers, get expert feedback, and advance your academic career.
+      </p>
+      
+      <div className="bg-white shadow-xl border-2 border-[#492B6F] text-left">
+        {/* Main Content Padding Wrap */}
+        <div className="p-6 sm:p-8">
+          {/* Header Row: Title & Button aligned */}
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 pb-2 border-b border-gray-100">
+            <h3 className="text-2xl font-bold text-[#492B6F]">Extended Abstracts</h3>
+            
+            <ExternalLink 
+              href="/templates/Extended_Abstract_Template_SCaLE_2026.docx" 
+              className="inline-flex items-center text-white font-semibold bg-[#492B6F] hover:bg-[#3a1f5a] py-2 px-4 transition-colors"
+            >
+              Download Template
+            </ExternalLink>
+          </div>
+          
+          {/* Details Section */}
+          <div className="space-y-3 text-gray-700">
+            <p><strong className="text-gray-900">Length:</strong> 3 pages</p>
+            <p><strong className="text-gray-900">Suitable for:</strong> Early-stage research, industry case studies, and conceptual frameworks</p>
           </div>
         </div>
-      </section>
+
+        {/* Centered Submission Process Footer */}
+        <div className="bg-gray-50 p-6 sm:p-8 text-center">
+          <h4 className="text-lg font-bold text-gray-900 mb-3">Submission Process</h4>
+          <p className="text-sm text-gray-600 max-w-xl mx-auto mb-4">
+            Please submit your complete extended abstract directly via email to{" "}
+            <a 
+              href="mailto:hasithar@uom.lk?cc=madsushanf@uom.lk,madhavaj@uom.lk" 
+              className="text-[#492B6F] font-medium hover:underline inline-block mx-1"
+            >
+              hasithar@uom.lk
+            </a>{" "}
+            with copying {" "}
+            <a href="mailto:madhushanf@uom.lk" className="text-[#492B6F] font-medium hover:underline inline-block mx-1">
+              madushanf@uom.lk
+            </a>{" "}
+            and{" "}
+            <a href="mailto:madhavaj@uom.lk" className="text-[#492B6F] font-medium hover:underline inline-block mx-1">
+              madhavaj@uom.lk
+            </a>
+          </p>
+          <p className="text-xs font-semibold text-gray-500 mt-6 sm:text-right">
+            Deadline: August 1, 2026
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
