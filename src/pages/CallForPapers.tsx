@@ -19,12 +19,12 @@ export default function CallForPapers() {
     },
     {
       number: 2,
-      title: "Systems Engineering & Decision Methods in Logistics",
+      title: "Data Science, AI & Decision Analytics for Supply Chains and Mobility Systems",
       topics: [
-        "Operations research, modeling and optimization",
-        "Simulation and system dynamics",
-        "Decision support systems and multi criteria analysis",
-        "Performance analysis and optimization"
+        "Artificial intelligence and predictive analytics",
+        "Operations research and optimization",
+        "Simulation and digital twins",
+        "Decision analytics and statistical modeling"
       ]
     },
     {
@@ -39,12 +39,12 @@ export default function CallForPapers() {
     },
     {
       number: 4,
-      title: "Smart Mobility & Transport Planning",
+      title: "Transportation Systems & Mobility",
       topics: [
-        "Intelligent transport systems",
-        "Urban freight and transport networks",
-        "Multimodal transport systems",
-        "Sustainable transport planning"
+        "Transportation planning, modelling, and traffic engineering",
+        "Intelligent Transport Systems (ITS) and smart mobility",
+        "Public, freight, and multimodal transportation systems",
+        "Sustainable, resilient, and low-carbon transportation"
       ]
     },
     {
@@ -156,11 +156,17 @@ export default function CallForPapers() {
                 <tbody className="divide-y divide-gray-200">
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Full Paper Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">July 15, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">
+                      <span className="line-through text-red-600 mr-2">July 15, 2026</span>
+                      July 31, 2026
+                    </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Extended Abstract Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">July 15, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">
+                      <span className="line-through text-red-600 mr-2">July 15, 2026</span>
+                      August 15, 2026
+                    </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance</td>

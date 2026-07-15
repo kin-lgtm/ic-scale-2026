@@ -246,9 +246,9 @@ export default function About() {
           </div>
 
           {/* Organizing Committee */}
-          <div className="w-screen mb-16 ml-[calc(-50vw+50%)]">
+          <div className="max-w-6xl mx-auto mb-16">
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Organizing Committee</h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 w-full px-16 sm:px-20 lg:px-32 mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
               {/* Member 1 */}
               <div className="group h-full">
                 <div className="bg-white overflow-hidden shadow-md flex flex-col h-full">

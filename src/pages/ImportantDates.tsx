@@ -36,7 +36,10 @@ export default function ImportantDates() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Paper Submission</h3>
                 <p className="text-gray-600 mb-4">Full Research Papers</p>
                 <div className="bg-white p-4 border border-[#492B6F]">
-                  <p className="text-3xl font-bold text-[#492B6F]">July 15</p>
+                  <p className="text-3xl font-bold text-[#492B6F] flex items-center justify-center gap-2">
+                    <span className="line-through text-gray-400 text-xl font-normal">July 15</span>
+                    July 31
+                  </p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>
@@ -55,7 +58,10 @@ export default function ImportantDates() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Abstract Submission</h3>
                 <p className="text-gray-600 mb-4">Extended Abstracts</p>
                 <div className="bg-white p-4 border border-[#492B6F]">
-                  <p className="text-3xl font-bold text-[#492B6F]">July 15</p>
+                  <p className="text-3xl font-bold text-[#492B6F] flex items-center justify-center gap-2">
+                    <span className="line-through text-gray-400 text-xl font-normal">July 15</span>
+                    August 15
+                  </p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>
@@ -162,11 +168,17 @@ export default function ImportantDates() {
                 <tbody className="divide-y divide-gray-200">
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Full Paper Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">July 15, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">
+                      <span className="line-through text-gray-400 mr-2">July 15, 2026</span>
+                      July 31, 2026
+                    </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Extended Abstract Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">July 15, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">
+                      <span className="line-through text-gray-400 mr-2">July 15, 2026</span>
+                      August 15, 2026
+                    </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance</td>

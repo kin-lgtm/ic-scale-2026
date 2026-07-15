@@ -11,10 +11,14 @@ export default function Navbar() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
-          <div className="flex items-center">
+          <div className="flex items-center space-x-4">
             <Link to="/" className="flex items-center space-x-3">
               <img src="/logo.png" alt="SCaLE 2026" className="h-16" />
             </Link>
+            <div className="h-10 w-px bg-gray-200 hidden sm:block"></div>
+            <a href="https://uom.lk" target="_blank" rel="noopener noreferrer" className="hidden sm:block">
+              <img src="/uom-logo.png" alt="University of Moratuwa" className="h-14 object-contain" />
+            </a>
           </div>
 
           {/* Desktop Menu */}

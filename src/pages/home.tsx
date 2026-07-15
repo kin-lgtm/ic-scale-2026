@@ -79,30 +79,47 @@ export default function Home() {
       {/* About Preview Section */}
       <section ref={section1.elementRef} className={`py-16 bg-gray-50 animate-on-scroll ${section1.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              About SCaLE 2026
-            </h2>
-            <div className="w-24 h-1 bg-[#492B6F] mx-auto mb-6"></div>
-          </div>
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              The International Conference on Supply Chain and Logistics Engineering (SCaLE 2026) is a newly established international conference hosted by the University of Moratuwa, Sri Lanka. The conference aims to promote rigorous, engineering-oriented research that addresses structural, operational, and technological challenges in modern supply chains and logistics systems.
-            </p>
-            <Link
-              to="/about"
-              className="inline-block bg-[#492B6F] text-white px-8 py-3 hover:bg-[#492B6F]/90 transition-colors font-semibold"
-            >
-              Read More
-            </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* About Text Column */}
+            <div className="lg:col-span-7">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                About SCaLE 2026
+              </h2>
+              <div className="w-24 h-1 bg-[#492B6F] mb-6"></div>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                The International Conference on Supply Chain and Logistics Engineering (SCaLE 2026) is a newly established international conference hosted by the University of Moratuwa, Sri Lanka. The conference aims to promote rigorous, engineering-oriented research that addresses structural, operational, and technological challenges in modern supply chains and logistics systems.
+              </p>
+              <Link
+                to="/about"
+                className="inline-block bg-[#492B6F] text-white px-8 py-3.5 hover:bg-[#492B6F]/90 transition-all font-semibold shadow-md"
+              >
+                Read More
+              </Link>
+            </div>
+
+            {/* Highlight Box Column */}
+            <div className="lg:col-span-5">
+              <div className="bg-white p-8 border-4 border-[#492B6F] shadow-lg">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#492B6F] mb-4 leading-tight">
+                  For the First Time in Asia
+                </h3>
+                <p className="text-gray-700 font-normal text-md mb-4 leading-relaxed">
+                  A Springer Nature-backed conference with accepted papers published in the prestigious <span className="font-semibold text-red-800">Springer Lecture Notes in Logistics (LNL)</span> series, indexed in Scopus.
+                </p>
+                <p className="bg-[#492B6F] p-4 text-white text-sm leading-relaxed justify-center text-center">
+                  Ensuring exceptional international visibility and scholarly recognition through SCaLE 2026.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+
       {/* Springer Publication Highlight Section */}
       <section ref={sectionSpringer.elementRef} className={`py-16 bg-[#492B6F] border-y border-gray-100 animate-on-scroll ${sectionSpringer.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white p-8 md:p-12 shadow-md rounded-r-lg flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div className="bg-white p-8 md:p-12 shadow-md flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="flex-shrink-0 bg-white p-6 rounded-lg shadow-md border border-gray-100 flex items-center justify-center">
               <img
                 src="/springer-logo.png"
@@ -124,17 +141,17 @@ export default function Home() {
                 This partnership reflects the rigorous academic standards of the conference. Volumes published in this series are indexed by major citation databases, including <span className="font-semibold text-gray-900">Scopus</span>, ensuring excellent visibility for your research.
               </p>
               <div className="flex flex-wrap items-center gap-4">
-                <div className="flex items-center gap-2 bg-white px-4 py-2 border border-gray-200 shadow-sm text-sm font-medium text-gray-800">
-                  <span className="w-2.5 h-2.5 bg-green-500"></span>
-                  Scopus Indexed
+                <div className="flex items-center gap-2 bg-white px-4 h-12 border border-gray-200 shadow-sm text-sm font-medium text-gray-800">
+                  <img src="/scopus-logo.png" alt="Scopus Logo" className="h-8 w-auto object-contain" />
+                  <span className="bg-blue-900 text-white px-2 py-0.5 text-md font-semibold">Indexed</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white px-4 py-2 border border-gray-200 shadow-sm text-sm font-medium text-gray-800">
+                <div className="flex items-center gap-2 bg-white px-4 h-12 border border-gray-200 shadow-sm text-sm font-medium text-gray-800">
                   <span className="w-2.5 h-2.5 bg-[#492B6F]"></span>
                   Peer Reviewed
                 </div>
                 <Link
                   to="/call-for-papers"
-                  className="bg-[#492B6F] text-white px-4 py-2 font-bold inline-flex items-center gap-1 text-sm ml-auto md:ml-0"
+                  className="bg-[#492B6F] text-white px-4 h-12 font-bold inline-flex items-center gap-1 text-sm ml-auto md:ml-0"
                 >
                   View Submission Guidelines
                 </Link>
