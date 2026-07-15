@@ -182,8 +182,8 @@ export default function Registration() {
                 >
                   <div className="p-8 flex-1 flex flex-col justify-between">
                     <div>
-                      <div className="flex items-center justify-between mb-6">
-                        <span className="p-3 bg-[#492B6F]/10 text-[#492B6F] group-hover:bg-[#492B6F] group-hover:text-white transition-colors duration-300">
+                      <div className="mb-6">
+                        <span className="inline-block p-3 bg-[#492B6F]/10 text-[#492B6F] group-hover:bg-[#492B6F] group-hover:text-white transition-colors duration-300">
                           {cat.icon === "AcademicCap" && (
                             <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -201,10 +201,6 @@ export default function Registration() {
                               <path strokeLinecap="round" strokeLinejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4.674 12h4.652a2 2 0 002-2v-4.674a2 2 0 00-2-2H3.016a2 2 0 00-2 2v4.674a2 2 0 002 2h4.652M9 20h6" />
                             </svg>
                           )}
-                        </span>
-
-                        <span className="text-xs font-bold uppercase px-3 py-1 bg-green-100 text-green-800">
-                          Save {activeGroup.currency} {cat.save}
                         </span>
                       </div>
 
