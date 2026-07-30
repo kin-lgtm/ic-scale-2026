@@ -174,7 +174,7 @@ export default function Registration() {
             </div>
 
             {/* Pricing Cards Grid */}
-            <div className={`grid grid-cols-1 ${activeGroup.categories.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : 'md:grid-cols-3'} gap-8 mb-16`}>
+            <div className={`grid grid-cols-1 ${activeGroup.categories.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : 'md:grid-cols-3'} gap-8 mb-8`}>
               {activeGroup.categories.map((cat, idx) => (
                 <div
                   key={idx}
@@ -257,6 +257,25 @@ export default function Registration() {
                 </table>
               </div>
             </div> */}
+
+            {/* Local Rate Eligibility Note */}
+            <div className="text-gray-500 text-xs md:text-sm text-center mb-12 max-w-3xl mx-auto italic space-y-2">
+              <p>
+                * The local rate is only applicable for presenting authors with only one affiliation and that belonging to a university/institution registered in Sri Lanka.
+              </p>
+              <p>
+                * A registering author can submit a maximum of 3 papers (Local undergraduate category is limited to only one submission).
+              </p>
+              <p>
+                * Additional paper fee: 100 USD for international participants / 7,500 LKR for local participants.
+              </p>
+              <p className="text-[#492B6F] font-bold">
+                * Authors are expected to present their papers in person. Under exceptional circumstances, online presentations may be permitted with the prior approval of the Organizing Committee.
+              </p>
+              <p>
+                * Please note that the registration fee is the same for both in-person and online presentations and will not be adjusted based on the mode of presentation.
+              </p>
+            </div>
 
             {/* What's Included */}
             <div className="bg-gray-50 p-8 mb-12">
