@@ -39,7 +39,6 @@ export default function ImportantDates() {
                   <p className="text-3xl font-bold text-[#492B6F] flex items-center justify-center gap-2">
                     <span className="line-through text-gray-400 text-xl font-normal">July 15</span>
                     <span className="line-through text-gray-400 text-xl font-normal">July 31</span>
-                    <span className="line-through text-gray-400 text-xl font-normal">August 7</span>
                     August 7
                   </p>
                   <p className="text-gray-600">2026</p>
@@ -62,7 +61,8 @@ export default function ImportantDates() {
                 <div className="bg-white p-4 border border-[#492B6F]">
                   <p className="text-3xl font-bold text-[#492B6F] flex items-center justify-center gap-2">
                     <span className="line-through text-gray-400 text-xl font-normal">July 15</span>
-                    August 15
+                    <span className="line-through text-gray-400 text-xl font-normal">August 15</span>
+                    August 31
                   </p>
                   <p className="text-gray-600">2026</p>
                 </div>
@@ -80,9 +80,28 @@ export default function ImportantDates() {
               </div>
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Acceptance Notice</h3>
-                <p className="text-gray-600 mb-4">Review Results</p>
+                <p className="text-gray-600 mb-4">Full Papers</p>
                 <div className="bg-white p-4 border border-[#492B6F]">
-                  <p className="text-3xl font-bold text-[#492B6F]">August 20</p>
+                  <p className="text-3xl font-bold text-[#492B6F]">August 31</p>
+                  <p className="text-gray-600">2026</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Notification - Extended Abstracts */}
+            <div className="bg-gradient-to-br from-[#492B6F]/10 to-white p-8 rounded-xl shadow-lg border-2 border-[#492B6F]/30 hover:shadow-2xl transition-all hover:scale-105">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-20 h-20 bg-[#492B6F] rounded-full flex items-center justify-center">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Acceptance Notice</h3>
+                <p className="text-gray-600 mb-4">Extended Abstracts</p>
+                <div className="bg-white p-4 border border-[#492B6F]">
+                  <p className="text-3xl font-bold text-[#492B6F]">September 20</p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>
@@ -99,9 +118,11 @@ export default function ImportantDates() {
               </div>
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Camera-Ready</h3>
-                <p className="text-gray-600 mb-4">Final Paper Submission</p>
+                <p className="text-gray-600 mb-4">Full Papers</p>
                 <div className="bg-white p-4 border border-[#492B6F]">
-                  <p className="text-3xl font-bold text-[#492B6F]">August 30</p>
+                  <p className="text-3xl font-bold text-[#492B6F] flex items-center justify-center gap-2">
+                    September 7
+                  </p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>

@@ -217,21 +217,22 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Coming Soon Animation */}
-          <div className="flex flex-col items-center justify-center py-12">
-            <div className="relative">
-              <div className="text-4xl md:text-5xl font-bold text-[#492B6F] animate-pulse">
-                Coming Soon
+          {/* Confirmed Sponsors */}
+          <div className="flex flex-wrap justify-center items-center gap-12 py-8">
+            <div className="flex items-center gap-4 bg-white px-8 py-6 shadow-md border border-gray-100">
+              <img
+                src="/uom-logo.png"
+                alt="University of Moratuwa"
+                className="h-20 w-20 object-contain flex-shrink-0"
+              />
+              <div className="text-left">
+                <div className="text-2xl font-bold text-[#8B1A2B] leading-tight">
+                  University of Moratuwa
+                </div>
+                <div className="text-base text-gray-700">
+                  Faculty of Graduate Studies
+                </div>
               </div>
-              <div className="absolute -inset-2 bg-[#492B6F]/10 blur-xl animate-pulse"></div>
-            </div>
-            <p className="mt-6 text-gray-600 text-lg">
-              We're excited to announce our sponsors soon!
-            </p>
-            <div className="flex gap-2 mt-6">
-              <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-              <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-              <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
             </div>
           </div>
 

@@ -166,16 +166,23 @@ export default function CallForPapers() {
                     <td className="px-6 py-4 text-gray-900 font-medium">Extended Abstract Submission Deadline</td>
                     <td className="px-6 py-4 text-gray-700">
                       <span className="line-through text-red-600 mr-2">July 15, 2026</span>
-                      August 15, 2026
+                      <span className="line-through text-red-600 mr-2">August 15, 2026</span>
+                      August 31, 2026
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance</td>
-                    <td className="px-6 py-4 text-gray-700">August 20, 2026</td>
+                    <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance for Full Papers</td>
+                    <td className="px-6 py-4 text-gray-700">August 31, 2026</td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-4 text-gray-900 font-medium">Camera-Ready Submission Deadline</td>
-                    <td className="px-6 py-4 text-gray-700">August 30, 2026</td>
+                    <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance for Extended Abstracts</td>
+                    <td className="px-6 py-4 text-gray-700">September 20, 2026</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="px-6 py-4 text-gray-900 font-medium">Camera-Ready Submission Deadline (Full Papers)</td>
+                    <td className="px-6 py-4 text-gray-700">
+                      September 7, 2026
+                    </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Registration Opens</td>
