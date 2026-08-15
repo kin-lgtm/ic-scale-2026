@@ -38,7 +38,9 @@ export default function ImportantDates() {
                 <div className="bg-white p-4 border border-[#492B6F]">
                   <p className="text-3xl font-bold text-[#492B6F] flex items-center justify-center gap-2">
                     <span className="line-through text-gray-400 text-xl font-normal">July 15</span>
-                    July 31
+                    <span className="line-through text-gray-400 text-xl font-normal">July 31</span>
+                    <span className="line-through text-gray-400 text-xl font-normal">August 7</span>
+                    August 7
                   </p>
                   <p className="text-gray-600">2026</p>
                 </div>

@@ -158,7 +158,8 @@ export default function CallForPapers() {
                     <td className="px-6 py-4 text-gray-900 font-medium">Full Paper Submission Deadline</td>
                     <td className="px-6 py-4 text-gray-700">
                       <span className="line-through text-red-600 mr-2">July 15, 2026</span>
-                      July 31, 2026
+                      <span className="line-through text-red-600 mr-2">July 31, 2026</span>
+                      August 07, 2026
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
@@ -178,6 +179,10 @@ export default function CallForPapers() {
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Registration Opens</td>
+                    <td className="px-6 py-4 text-gray-700">September 1, 2026</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="px-6 py-4 text-gray-900 font-medium">Postgraduate Colloquium Submission</td>
                     <td className="px-6 py-4 text-gray-700">September 1, 2026</td>
                   </tr>
                   <tr className="bg-[#492B6F]/10 hover:bg-[#492B6F]/20 transition-colors">
