@@ -37,7 +37,7 @@ export default function About() {
       image: "/jayakrishna.jpeg"
     },
     {
-      name: "Prof. Samudaya Nanayakkara",
+      name: "Dr. Samudaya Nanayakkara",
       affiliation: "Western Sydney University, Australia",
       email: "s.nanayakkara@westernsydney.edu.au",
       image: "/images/oc/ac/Samudaya_Nanayakkara.webp"
