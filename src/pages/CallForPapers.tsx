@@ -172,7 +172,10 @@ export default function CallForPapers() {
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance for Full Papers</td>
-                    <td className="px-6 py-4 text-gray-700">August 31, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">
+                      <span className="line-through text-red-600 mr-2">August 31, 2026</span>
+                      September 11, 2026
+                    </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance for Extended Abstracts</td>
@@ -181,12 +184,16 @@ export default function CallForPapers() {
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Camera-Ready Submission Deadline (Full Papers)</td>
                     <td className="px-6 py-4 text-gray-700">
-                      September 7, 2026
+                      <span className="line-through text-red-600 mr-2">September 7, 2026</span>
+                      September 18, 2026
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Registration Opens</td>
-                    <td className="px-6 py-4 text-gray-700">September 1, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">
+                      <span className="line-through text-red-600 mr-2">September 1, 2026</span>
+                      September 12, 2026
+                    </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Postgraduate Colloquium Submission</td>

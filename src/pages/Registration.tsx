@@ -6,6 +6,8 @@ interface Category {
   name: string;
   earlyBird: string;
   regular: string;
+  earlyBirdUSD?: string;
+  regularUSD?: string;
   description: string;
   icon: 'AcademicCap' | 'UserGroup' | 'Briefcase';
   save: string;
@@ -87,24 +89,28 @@ export default function Registration() {
     },
     'intl-gala': {
       title: "International Participants (Including Gala Dinner)",
-      currency: "USD",
-      notes: "Includes access to all conference sessions, conference materials, and the exclusive conference Gala Dinner.",
+      currency: "LKR",
+      notes: "Includes access to all conference sessions, conference materials, and the exclusive conference Gala Dinner. Approximate USD equivalents are shown for reference (1 USD ≈ 320 LKR).",
       categories: [
         {
           name: "Student Participant",
-          earlyBird: "100",
-          regular: "150",
+          earlyBird: "32,000",
+          regular: "48,000",
+          earlyBirdUSD: "100",
+          regularUSD: "150",
           description: "Valid student identity proof is required during registration.",
           icon: "AcademicCap",
-          save: "50"
+          save: "16,000"
         },
         {
           name: "Regular Participant",
-          earlyBird: "150",
-          regular: "200",
+          earlyBird: "48,000",
+          regular: "64,000",
+          earlyBirdUSD: "150",
+          regularUSD: "200",
           description: "For professionals, researchers, industry experts, and academic faculty members.",
           icon: "Briefcase",
-          save: "50"
+          save: "16,000"
         }
       ]
     }
@@ -128,35 +134,41 @@ export default function Registration() {
       <section ref={section1.elementRef} className={`py-16 animate-on-scroll ${section1.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <p className="text-lg text-gray-700 leading-relaxed mb-12 text-center max-w-3xl mx-auto">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6 text-center max-w-3xl mx-auto">
               Registration fee details are now available. Select your participation category below to view the corresponding early bird and regular rates.
             </p>
 
+            <div className="text-center mb-12">
+              <span className="inline-block bg-[#492B6F] text-white font-semibold px-6 py-2.5 text-sm tracking-wide shadow-md">
+                Early Bird Registration Period: 30 Aug 2026 – 15 Oct 2026
+              </span>
+            </div>
+
             {/* Tabs Navigation */}
-            <div className="flex flex-col md:flex-row justify-center items-stretch md:items-center gap-2 mb-10 bg-gray-100/80 p-1.5 max-w-3xl mx-auto border border-gray-200/50">
+            <div className="flex flex-col md:flex-row justify-center items-stretch md:items-center gap-3 mb-10 max-w-4xl mx-auto">
               <button
                 onClick={() => setActiveTab('local-no-gala')}
-                className={`px-6 py-3 text-sm font-semibold transition-all duration-200 ${activeTab === 'local-no-gala'
-                  ? 'bg-[#492B6F] text-white shadow-md'
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200/50'
+                className={`px-6 py-4 text-sm font-bold uppercase tracking-wide border-2 transition-all duration-200 ${activeTab === 'local-no-gala'
+                  ? 'bg-[#492B6F] text-white border-[#492B6F] shadow-lg scale-105'
+                  : 'bg-white text-gray-600 border-gray-200 hover:border-[#492B6F]/50 hover:text-[#492B6F]'
                   }`}
               >
                 Local (Excluding Gala)
               </button>
               <button
                 onClick={() => setActiveTab('local-gala')}
-                className={`px-6 py-3 text-sm font-semibold transition-all duration-200 ${activeTab === 'local-gala'
-                  ? 'bg-[#492B6F] text-white shadow-md'
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200/50'
+                className={`px-6 py-4 text-sm font-bold uppercase tracking-wide border-2 transition-all duration-200 ${activeTab === 'local-gala'
+                  ? 'bg-[#492B6F] text-white border-[#492B6F] shadow-lg scale-105'
+                  : 'bg-white text-gray-600 border-gray-200 hover:border-[#492B6F]/50 hover:text-[#492B6F]'
                   }`}
               >
                 Local (Including Gala)
               </button>
               <button
                 onClick={() => setActiveTab('intl-gala')}
-                className={`px-6 py-3 text-sm font-semibold transition-all duration-200 ${activeTab === 'intl-gala'
-                  ? 'bg-[#492B6F] text-white shadow-md'
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200/50'
+                className={`px-6 py-4 text-sm font-bold uppercase tracking-wide border-2 transition-all duration-200 ${activeTab === 'intl-gala'
+                  ? 'bg-[#492B6F] text-white border-[#492B6F] shadow-lg scale-105'
+                  : 'bg-white text-gray-600 border-gray-200 hover:border-[#492B6F]/50 hover:text-[#492B6F]'
                   }`}
               >
                 International (Including Gala)
@@ -214,12 +226,18 @@ export default function Registration() {
                           <span className="text-lg font-extrabold text-[#492B6F]">
                             {activeGroup.currency} {cat.earlyBird}
                           </span>
+                          {cat.earlyBirdUSD && (
+                            <span className="block text-xs text-gray-500 mt-0.5">≈ USD {cat.earlyBirdUSD}</span>
+                          )}
                         </div>
                         <div className="bg-gray-50 p-3.5 border border-gray-200/60">
                           <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider block mb-1">Regular</span>
                           <span className="text-lg font-bold text-gray-800">
                             {activeGroup.currency} {cat.regular}
                           </span>
+                          {cat.regularUSD && (
+                            <span className="block text-xs text-gray-500 mt-0.5">≈ USD {cat.regularUSD}</span>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -267,7 +285,7 @@ export default function Registration() {
                 * A registering author can submit a maximum of 3 papers (Local undergraduate category is limited to only one submission).
               </p>
               <p>
-                * Additional paper fee: 100 USD for international participants / 7,500 LKR for local participants.
+                * Additional paper fee: 32,000 LKR (≈ USD 100) for international participants / 7,500 LKR for local participants.
               </p>
               <p className="text-[#492B6F] font-bold">
                 * Authors are expected to present their papers in person. Under exceptional circumstances, online presentations may be permitted with the prior approval of the Organizing Committee.

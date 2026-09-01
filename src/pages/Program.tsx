@@ -40,11 +40,11 @@ export default function Program() {
       {/* Intro Section */}
       <section ref={section1.elementRef} className={`relative py-16 animate-on-scroll ${section1.isVisible ? 'visible' : ''}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center mb-16">
+          {/* <div className="max-w-4xl mx-auto text-center mb-16">
             <p className="text-lg text-gray-700 leading-relaxed">
               SCaLE 2026 will feature distinguished keynote speakers from academia, industry, and policy-making bodies.
             </p>
-          </div>
+          </div> */}
 
           {/* Proposed Keynote Themes */}
           <div className="max-w-5xl mx-auto">
@@ -99,27 +99,72 @@ export default function Program() {
                   <p className="text-gray-500 mt-4">We are pleased to confirm additional distinguished keynote speakers who will share their expertise at SCaLE 2026. Details will be announced soon.</p>
                 </div>
               </div> */}
-              {/* Coming Soon Animation */}
-          <div className="flex flex-col items-center justify-center py-12">
-            <div className="relative">
-              <div className="text-4xl md:text-5xl font-bold text-[#492B6F] animate-pulse">
-                Coming Soon
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Speaker 1 - Prof. Jayakrishna Kandasamy */}
+                <div className="relative bg-white shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-shadow text-center p-8">
+                  <div className="flex justify-center mb-6">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-[#492B6F]/30 blur-2xl"></div>
+                      <img
+                        src="/jayakrishna.jpeg"
+                        alt="Prof. Jayakrishna Kandasamy"
+                        className="relative w-52 h-52 object-cover border-4 border-[#492B6F]/20 shadow-lg"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-[#492B6F] uppercase tracking-wide mb-2">
+                    Prof. Jayakrishna Kandasamy
+                  </h3>
+                  <div className="bg-[#492B6F]/10 px-4 py-2 mb-6">
+                    <p className="text-[#492B6F] font-bold text-lg">Professor</p>
+                    <p className="text-gray-600 text-sm font-bold">
+                      School of Mechanical Engineering,<br />
+                      Vellore Institute of Technology, India
+                    </p>
+                  </div>
+                  <div className="bg-[#492B6F] px-4 py-3">
+                    <p className="text-white font-bold text-sm leading-snug">
+                      Artificial Intelligence and Predictive Analytics in Supply Chain Operations
+                    </p>
+                  </div>
+                </div>
+
+                {/* Speaker 2 - Prof. Amal S. Kumarage */}
+                <div className="relative bg-white shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-shadow text-center p-8">
+                  <div className="flex justify-center mb-6">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-[#492B6F]/30 blur-2xl"></div>
+                      <img
+                        src="/images/oc/ac/amal.jpg"
+                        alt="Prof. Amal S. Kumarage"
+                        className="relative w-52 h-52 object-cover border-4 border-[#492B6F]/20 shadow-lg"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold text-[#492B6F] uppercase tracking-wide mb-2">
+                    Prof. Amal S. Kumarage
+                  </h3>
+                  <div className="bg-[#492B6F]/10 px-4 py-2 mb-6">
+                    <p className="text-[#492B6F] font-bold text-lg">Emeritus Professor</p>
+                    <p className="text-gray-600 text-sm font-bold">
+                      Department of Transport Management<br />
+                      and Logistics Engineering, University of Moratuwa
+                    </p>
+                  </div>
+                  <div className="bg-[#492B6F] px-4 py-3">
+                    <p className="text-white font-bold text-sm leading-snug">
+                      From Analysis to Design: Building the Foundations for Supply Chains and Logistics Engineering
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="absolute -inset-2 bg-[#492B6F]/10 blur-xl animate-pulse"></div>
-            </div>
-            <div className="flex gap-2 mt-6">
-              <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-              <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-              <div className="w-3 h-3 bg-[#492B6F] rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
-            </div>
-          </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Proposed Keynote Themes */}
-      <section className="relative py-16 bg-gray-50/50">
+      {/* <section className="relative py-16 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Proposed Keynote Themes</h2>
@@ -162,7 +207,7 @@ export default function Program() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

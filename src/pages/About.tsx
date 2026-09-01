@@ -5,6 +5,45 @@ export default function About() {
   const section2 = useScrollAnimation();
   const section3 = useScrollAnimation();
 
+  const internationalAdvisoryCommittee = [
+    {
+      name: "Prof. Amila Thibbotuwawa",
+      affiliation: "University of Moratuwa, Sri Lanka",
+      email: "amilat@uom.lk",
+      image: "/images/oc/amila.jpg"
+    },
+    {
+      name: "Prof. Anna Burduk",
+      affiliation: "Wroclaw University of Science and Technology, Poland",
+      email: "anna.burduk@pwr.edu.pl",
+      image: "/images/oc/ac/Anna_Burduk.webp"
+    },
+    {
+      name: "Prof. Izabela Nielsen",
+      affiliation: "Aalborg University, Denmark",
+      email: "izabela@mp.aau.dk",
+      image: "/images/oc/ac/Izabela.jpg"
+    },
+    {
+      name: "Prof. Stefan Seuring",
+      affiliation: "University of Kassel, Germany",
+      email: "seuring@uni-kassel.de",
+      image: "/images/oc/ac/Stefan_Seuring.png"
+    },
+    {
+      name: "Prof. Jayakrishna Kandasamy",
+      affiliation: "Vellore Institute of Technology, India",
+      email: "jayakrishna.k@vit.ac.in",
+      image: "/jayakrishna.jpeg"
+    },
+    {
+      name: "Prof. Samudaya Nanayakkara",
+      affiliation: "Western Sydney University, Australia",
+      email: "s.nanayakkara@westernsydney.edu.au",
+      image: "/images/oc/ac/Samudaya_Nanayakkara.webp"
+    }
+  ];
+
   const advisoryCommittee = [
     {
       name: "Prof. H.N. Perera",
@@ -242,6 +281,41 @@ export default function About() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Editorial Committee */}
+          <div className="max-w-6xl mx-auto mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Editorial Committee</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {internationalAdvisoryCommittee.map((member, index) => (
+                <div key={index} className="group h-full">
+                  <div className="bg-white overflow-hidden shadow-md flex flex-col h-full">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={member.image || `/images/editorial/member-${index + 1}.jpg`}
+                        alt={member.name}
+                        className="w-full h-100 object-cover transition-all duration-500 group-hover:scale-105"
+                        style={{ objectPosition: 'center 20%' }}
+                        onError={(e) => {
+                          e.currentTarget.src = `https://via.placeholder.com/400x400/4B5563/FFFFFF?text=${member.name.split(' ').pop()}`;
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#492B6F]/60 to-transparent pointer-events-none" />
+                    </div>
+                    <div className="p-6 text-center flex flex-col flex-grow">
+                      <h5 className="font-bold text-xl text-[#492B6F] mb-2">{member.name}</h5>
+                      <p className="text-md text-gray-600 mb-3 flex-grow">{member.affiliation}</p>
+                      <div className="flex justify-center text-sm">
+                        <a href={`mailto:${member.email}`} className="flex items-center gap-1 text-[#492B6F] hover:underline">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                          {member.email}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 

@@ -82,7 +82,10 @@ export default function ImportantDates() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Acceptance Notice</h3>
                 <p className="text-gray-600 mb-4">Full Papers</p>
                 <div className="bg-white p-4 border border-[#492B6F]">
-                  <p className="text-3xl font-bold text-[#492B6F]">August 31</p>
+                  <p className="text-3xl font-bold text-[#492B6F] flex items-center justify-center gap-2">
+                    <span className="line-through text-gray-400 text-xl font-normal">August 31</span>
+                    September 11
+                  </p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>
@@ -121,7 +124,8 @@ export default function ImportantDates() {
                 <p className="text-gray-600 mb-4">Full Papers</p>
                 <div className="bg-white p-4 border border-[#492B6F]">
                   <p className="text-3xl font-bold text-[#492B6F] flex items-center justify-center gap-2">
-                    September 7
+                    <span className="line-through text-gray-400 text-xl font-normal">September 7</span>
+                    September 18
                   </p>
                   <p className="text-gray-600">2026</p>
                 </div>
@@ -141,7 +145,10 @@ export default function ImportantDates() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Registration Opens</h3>
                 <p className="text-gray-600 mb-4">Early Bird Rates</p>
                 <div className="bg-white p-4 border border-[#492B6F]">
-                  <p className="text-3xl font-bold text-[#492B6F]">September 1</p>
+                  <p className="text-3xl font-bold text-[#492B6F] flex items-center justify-center gap-2">
+                    <span className="line-through text-gray-400 text-xl font-normal">September 1</span>
+                    September 12
+                  </p>
                   <p className="text-gray-600">2026</p>
                 </div>
               </div>

@@ -7,6 +7,14 @@ export default function Home() {
   const section3 = useScrollAnimation();
   const sectionSpringer = useScrollAnimation();
 
+  const partnerLogos = [
+    { src: "/uom-logo.png", alt: "University of Moratuwa", height: "h-20" },
+    { src: "/springer-logo.png", alt: "Springer", height: "h-24" },
+    { src: "/images/STL.png", alt: "Society of Transport and Logistics", height: "h-20" },
+    { src: "/images/ieee_tems_logo.jfif", alt: "IEEE TEMS", height: "h-12" },
+    { src: "/images/scolo.png", alt: "SCOLO", height: "h-20" }
+  ];
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -71,6 +79,24 @@ export default function Home() {
               >
                 Registration
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners & Technical Co-Sponsorship Strip */}
+      <section className="py-4 bg-white border-y border-gray-100 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="overflow-hidden">
+            <div className="flex items-center w-max animate-marquee">
+              {[...partnerLogos, ...partnerLogos].map((logo, index) => (
+                <img
+                  key={index}
+                  src={logo.src}
+                  alt={logo.alt}
+                  className={`${logo.height} w-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300 shrink-0 mx-10`}
+                />
+              ))}
             </div>
           </div>
         </div>
