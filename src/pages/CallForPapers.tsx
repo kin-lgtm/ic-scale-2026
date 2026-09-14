@@ -135,7 +135,7 @@ export default function CallForPapers() {
       </section>
 
       {/* Important Dates Section - Top Priority */}
-      <section className="py-16 bg-gray-50">
+      <section id="important-dates" className="py-16 bg-gray-50 scroll-mt-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -286,6 +286,53 @@ export default function CallForPapers() {
                     by Springer.
                   </p>
                   <p><strong>Presentation:</strong> Accepted papers will be presented at the conference</p>
+                </div>
+              </div>
+
+              <div id="camera-ready" className="relative bg-amber-50 p-8 border-2 border-amber-500 shadow-md scroll-mt-28">
+                <span className="absolute -top-3 left-6 bg-amber-500 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 shadow-sm">
+                  Special Notice
+                </span>
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 mt-2 border-gray-100">
+                  <h3 className="text-2xl font-bold text-gray-900">3. Camera-Ready Submission</h3>
+                  <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <ExternalLink
+                      href="https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27841328/data/v1"
+                      className="flex items-center justify-center gap-2 bg-[#492B6F] text-white text-sm font-semibold px-4 py-2.5 hover:bg-[#3a2158] transition-colors shadow-sm"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                      Download Template
+                    </ExternalLink>
+                    <ExternalLink
+                      href="https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/26362278/data/v2"
+                      className="flex items-center justify-center gap-2 border border-[#492B6F] text-[#492B6F] text-sm font-semibold px-4 py-2.5 hover:bg-[#492B6F]/5 transition-colors shadow-sm"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                      Full Paper Instructions
+                    </ExternalLink>
+                  </div>
+                </div>
+                <div className="space-y-3 text-gray-700">
+                  <p><strong>Length:</strong> 12–15 pages</p>
+                  <p><strong>Suitable for:</strong> Accepted full papers, revised according to reviewer comments and formatted per the final Springer template</p>
+                  <p>
+                    <strong>Publication:</strong> Camera-ready papers will be published as part of the Book Chapter Series of{' '}
+                    <ExternalLink
+                      href="https://link.springer.com/series/11220"
+                      className="text-[#492B6F] hover:underline font-semibold"
+                    >
+                      Lecture Notes in Logistics
+                    </ExternalLink>{' '}
+                    by Springer.
+                  </p>
+                  <p><strong>Presentation:</strong> Camera-ready papers will be presented at the conference</p>
+                  <p className="text-amber-800 font-bold">
+                    Deadline: September 18, 2026 - late submissions may be excluded from the proceedings. Please adhere strictly to the Springer template before submitting your camera-ready submission.
+                  </p>
                 </div>
               </div>
             </div>

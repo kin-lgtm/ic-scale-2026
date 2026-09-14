@@ -166,7 +166,7 @@ export default function Venue() {
           </div>
 
           {/* Recommended Hotels Section */}
-          <div className="mt-16 max-w-6xl mx-auto">
+          <div id="accommodation" className="mt-16 max-w-6xl mx-auto scroll-mt-28">
             <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Recommended Accommodation</h3>
             <p className="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
               We recommend the following hotels near the conference venue for your convenience. All hotels are within easy reach of the University of Moratuwa.
@@ -229,44 +229,10 @@ export default function Venue() {
                 </div>
               </div>
 
-              {/* Other Hotels */}
-              <div className="bg-white shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="bg-white shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow lg:col-span-2 max-w-md mx-auto w-full">
                 <div className="h-48 overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" 
-                    alt="Trillium Residence"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex text-yellow-400 mb-2">
-                    {'★'.repeat(4)}
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">Trillium Residence</h4>
-                  <p className="text-gray-600 mb-4 text-sm">
-                    Modern serviced apartments with excellent facilities, located in Mount Lavinia area with easy access to the conference venue.
-                  </p>
-                  <div className="space-y-2 text-sm text-gray-700 mb-4">
-                    <div className="flex items-center">
-                      <svg className="w-4 h-4 text-[#492B6F] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      </svg>
-                      <span>Mount Lavinia</span>
-                    </div>
-                    <div className="flex items-center">
-                      <svg className="w-4 h-4 text-[#492B6F] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                      <span>7 km from venue</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80" 
+                  <img
+                    src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80"
                     alt="Berjaya Hotel Colombo"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
@@ -296,71 +262,6 @@ export default function Venue() {
                 </div>
               </div>
 
-              <div className="bg-white shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80" 
-                    alt="Hotel J Moratuwa"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex text-yellow-400 mb-2">
-                    {'★'.repeat(3)}
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">Hotel J Moratuwa</h4>
-                  <p className="text-gray-600 mb-4 text-sm">
-                    Budget-friendly option very close to the conference venue, offering clean and comfortable rooms with essential amenities.
-                  </p>
-                  <div className="space-y-2 text-sm text-gray-700 mb-4">
-                    <div className="flex items-center">
-                      <svg className="w-4 h-4 text-[#492B6F] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      </svg>
-                      <span>Moratuwa</span>
-                    </div>
-                    <div className="flex items-center">
-                      <svg className="w-4 h-4 text-[#492B6F] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                      <span>2 km from venue</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" 
-                    alt="Mount Royal Beach Hotel"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex text-yellow-400 mb-2">
-                    {'★'.repeat(3)}
-                  </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">Mount Royal Beach Hotel</h4>
-                  <p className="text-gray-600 mb-4 text-sm">
-                    Beachfront property in Mount Lavinia offering comfortable stays with ocean views and local dining options nearby.
-                  </p>
-                  <div className="space-y-2 text-sm text-gray-700 mb-4">
-                    <div className="flex items-center">
-                      <svg className="w-4 h-4 text-[#492B6F] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      </svg>
-                      <span>Mount Lavinia</span>
-                    </div>
-                    <div className="flex items-center">
-                      <svg className="w-4 h-4 text-[#492B6F] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                      <span>5 km from venue</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Booking Note */}

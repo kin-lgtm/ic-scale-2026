@@ -43,36 +43,66 @@ export default function Navbar() {
             >
               About
             </Link>
-            <Link 
-              to="/call-for-papers" 
+            <div className="relative group">
+              <Link
+                to="/call-for-papers"
+                className={`flex items-center gap-1 transition-colors font-medium ${
+                  location.pathname === '/call-for-papers'
+                    ? 'text-[#492B6F] font-semibold border-b-2 border-[#492B6F]'
+                    : 'text-gray-700 hover:text-[#492B6F]'
+                }`}
+              >
+                Call for Papers
+              </Link>
+              <div className="absolute left-0 top-full pt-2 opacity-0 invisible -translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-50">
+                <div className="bg-white shadow-lg border border-gray-100 min-w-[220px] py-2">
+                  <Link
+                    to="/call-for-papers#camera-ready"
+                    className="block px-4 py-2.5 font-medium text-gray-700 hover:bg-[#492B6F]/10 transition-colors"
+                  >
+                    Camera Ready Submission
+                  </Link>
+                  <Link
+                    to="/call-for-papers#important-dates"
+                    className="block px-4 py-2.5 font-medium text-gray-700 hover:bg-[#492B6F]/10 transition-colors"
+                  >
+                    Important Dates
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <Link
+              to="/program"
               className={`transition-colors font-medium ${
-                location.pathname === '/call-for-papers' 
-                  ? 'text-[#492B6F] font-semibold border-b-2 border-[#492B6F]' 
-                  : 'text-gray-700 hover:text-[#492B6F]'
-              }`}
-            >
-              Call for Papers
-            </Link>
-            <Link 
-              to="/program" 
-              className={`transition-colors font-medium ${
-                location.pathname === '/program' 
-                  ? 'text-[#492B6F] font-semibold border-b-2 border-[#492B6F]' 
+                location.pathname === '/program'
+                  ? 'text-[#492B6F] font-semibold border-b-2 border-[#492B6F]'
                   : 'text-gray-700 hover:text-[#492B6F]'
               }`}
             >
               Program
             </Link>
-            <Link 
-              to="/venue" 
-              className={`transition-colors font-medium ${
-                location.pathname === '/venue' 
-                  ? 'text-[#492B6F] font-semibold border-b-2 border-[#492B6F]' 
-                  : 'text-gray-700 hover:text-[#492B6F]'
-              }`}
-            >
-              Travel
-            </Link>
+            <div className="relative group">
+              <Link
+                to="/venue"
+                className={`flex items-center gap-1 transition-colors font-medium ${
+                  location.pathname === '/venue'
+                    ? 'text-[#492B6F] font-semibold border-b-2 border-[#492B6F]'
+                    : 'text-gray-700 hover:text-[#492B6F]'
+                }`}
+              >
+                Travel
+              </Link>
+              <div className="absolute left-0 top-full pt-2 opacity-0 invisible -translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-50">
+                <div className="bg-white shadow-lg border border-gray-100 min-w-[200px] py-2">
+                  <Link
+                    to="/venue#accommodation"
+                    className="block px-4 py-2.5 font-medium text-gray-700 hover:bg-[#492B6F]/10 transition-colors"
+                  >
+                    Accommodation
+                  </Link>
+                </div>
+              </div>
+            </div>
             <Link 
               to="/postgraduate-colloquium" 
               className={`transition-colors font-medium ${
@@ -149,8 +179,8 @@ export default function Navbar() {
             >
               About
             </Link>
-            <Link 
-              to="/call-for-papers" 
+            <Link
+              to="/call-for-papers"
               onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
                 location.pathname === '/call-for-papers'
@@ -160,8 +190,22 @@ export default function Navbar() {
             >
               Call for Papers
             </Link>
-            <Link 
-              to="/program" 
+            <Link
+              to="/call-for-papers#camera-ready"
+              onClick={closeMenu}
+              className="block px-3 py-2 ml-4 rounded-md text-sm text-gray-600 hover:bg-[#492B6F]/10 hover:text-[#492B6F]"
+            >
+              Camera Ready Submission
+            </Link>
+            <Link
+              to="/call-for-papers#important-dates"
+              onClick={closeMenu}
+              className="block px-3 py-2 ml-4 rounded-md text-sm text-gray-600 hover:bg-[#492B6F]/10 hover:text-[#492B6F]"
+            >
+              Important Dates
+            </Link>
+            <Link
+              to="/program"
               onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
                 location.pathname === '/program'
@@ -171,8 +215,8 @@ export default function Navbar() {
             >
               Program
             </Link>
-            <Link 
-              to="/venue" 
+            <Link
+              to="/venue"
               onClick={closeMenu}
               className={`block px-3 py-2 rounded-md font-medium ${
                 location.pathname === '/venue'
@@ -181,6 +225,13 @@ export default function Navbar() {
               }`}
             >
               Travel & Accommodation
+            </Link>
+            <Link
+              to="/venue#accommodation"
+              onClick={closeMenu}
+              className="block px-3 py-2 ml-4 rounded-md text-sm text-gray-600 hover:bg-[#492B6F]/10 hover:text-[#492B6F]"
+            >
+              Accommodation
             </Link>
             <Link 
               to="/postgraduate-colloquium" 
