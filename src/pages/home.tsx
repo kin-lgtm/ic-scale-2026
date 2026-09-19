@@ -68,7 +68,7 @@ export default function Home() {
                 Call for Papers
               </Link>
               <Link
-                to="/important-dates"
+                to="/call-for-papers#important-dates"
                 className="bg-gray-800 text-white px-8 py-4 hover:bg-gray-700 transition-all transform hover:scale-105 font-semibold text-lg shadow-lg"
               >
                 Important Dates

@@ -179,20 +179,21 @@ export default function CallForPapers() {
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Notification of Acceptance for Extended Abstracts</td>
-                    <td className="px-6 py-4 text-gray-700">September 20, 2026</td>
+                    <td className="px-6 py-4 text-gray-700">
+                      <span className="line-through text-red-600 mr-2">September 20, 2026</span>
+                      October 20, 2026
+                    </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Camera-Ready Submission Deadline (Full Papers)</td>
                     <td className="px-6 py-4 text-gray-700">
-                      <span className="line-through text-red-600 mr-2">September 7, 2026</span>
-                      September 18, 2026
+                      September 20, 2026
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 text-gray-900 font-medium">Registration Opens</td>
                     <td className="px-6 py-4 text-gray-700">
-                      <span className="line-through text-red-600 mr-2">September 1, 2026</span>
-                      September 12, 2026
+                      Opening Soon
                     </td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
@@ -331,7 +332,7 @@ export default function CallForPapers() {
                   </p>
                   <p><strong>Presentation:</strong> Camera-ready papers will be presented at the conference</p>
                   <p className="text-amber-800 font-bold">
-                    Deadline: September 18, 2026 - late submissions may be excluded from the proceedings. Please adhere strictly to the Springer template before submitting your camera-ready submission.
+                    Deadline: September 20, 2026 - late submissions may be excluded from the proceedings. Please adhere strictly to the Springer template before submitting your camera-ready submission.
                   </p>
                 </div>
               </div>

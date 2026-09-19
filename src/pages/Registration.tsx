@@ -22,7 +22,7 @@ interface RegistrationGroup {
 
 export default function Registration() {
   const section1 = useScrollAnimation();
-  const [activeTab, setActiveTab] = useState<'local-no-gala' | 'local-gala' | 'intl-gala'>('local-no-gala');
+  const [activeTab, setActiveTab] = useState<'local-no-gala' | 'local-gala' | 'intl-gala'>('intl-gala');
 
   const registrationData: Record<'local-no-gala' | 'local-gala' | 'intl-gala', RegistrationGroup> = {
     'local-no-gala': {
@@ -140,12 +140,21 @@ export default function Registration() {
 
             <div className="text-center mb-12">
               <span className="inline-block bg-[#492B6F] text-white font-semibold px-6 py-2.5 text-sm tracking-wide shadow-md">
-                Early Bird Registration Period: 30 Aug 2026 – 15 Oct 2026
+                Registration will open soon
               </span>
             </div>
 
             {/* Tabs Navigation */}
             <div className="flex flex-col md:flex-row justify-center items-stretch md:items-center gap-3 mb-10 max-w-4xl mx-auto">
+              <button
+                onClick={() => setActiveTab('intl-gala')}
+                className={`px-6 py-4 text-sm font-bold uppercase tracking-wide border-2 transition-all duration-200 ${activeTab === 'intl-gala'
+                  ? 'bg-[#492B6F] text-white border-[#492B6F] shadow-lg scale-105'
+                  : 'bg-white text-gray-600 border-gray-200 hover:border-[#492B6F]/50 hover:text-[#492B6F]'
+                  }`}
+              >
+                International (Including Gala)
+              </button>
               <button
                 onClick={() => setActiveTab('local-no-gala')}
                 className={`px-6 py-4 text-sm font-bold uppercase tracking-wide border-2 transition-all duration-200 ${activeTab === 'local-no-gala'
@@ -163,15 +172,6 @@ export default function Registration() {
                   }`}
               >
                 Local (Including Gala)
-              </button>
-              <button
-                onClick={() => setActiveTab('intl-gala')}
-                className={`px-6 py-4 text-sm font-bold uppercase tracking-wide border-2 transition-all duration-200 ${activeTab === 'intl-gala'
-                  ? 'bg-[#492B6F] text-white border-[#492B6F] shadow-lg scale-105'
-                  : 'bg-white text-gray-600 border-gray-200 hover:border-[#492B6F]/50 hover:text-[#492B6F]'
-                  }`}
-              >
-                International (Including Gala)
               </button>
             </div>
 
